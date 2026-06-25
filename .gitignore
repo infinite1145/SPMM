@@ -1,8 +1,9 @@
-./verdiLog/*
-./check_result/*
-./test_result/*
-./novas.*
-./*.fsdb
-./visual_result/*
-./tools/*
-./testcases/*
+verdiLog/
+check_result/
+test_result/
+novas.*
+*.fsdb
+visual_result/
+tools/
+testcases/
+requirements.txt
