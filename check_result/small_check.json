@@ -1,0 +1,10 @@
+{
+  "first_mismatches": [],
+  "golden_len": 256,
+  "max_abs_error": 0.0,
+  "mismatch_count_first_32": 0,
+  "mode": "bit",
+  "pass": true,
+  "result_len": 256,
+  "total_checked": 256
+}

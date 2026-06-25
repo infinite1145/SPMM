@@ -1,0 +1,138 @@
+{
+  "vectors": [
+    {
+      "eor_mask_hex": "0004",
+      "k": 0,
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "k": 0,
+          "row": 1,
+          "value": 0.5
+        },
+        {
+          "eor": true,
+          "k": 0,
+          "row": 2,
+          "value": -4.0
+        },
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0008",
+      "k": 1,
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": true,
+          "k": 1,
+          "row": 3,
+          "value": -1.0
+        }
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0002",
+      "k": 6,
+      "lanes": [
+        {
+          "eor": false,
+          "k": 6,
+          "row": 0,
+          "value": -1.5
+        },
+        {
+          "eor": true,
+          "k": 6,
+          "row": 1,
+          "value": 0.5
+        },
+        null,
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0001",
+      "k": 7,
+      "lanes": [
+        {
+          "eor": true,
+          "k": 7,
+          "row": 0,
+          "value": -3.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0001",
+      "k": 1,
+      "lanes": [
+        {
+          "eor": true,
+          "k": 1,
+          "row": 4,
+          "value": -0.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0008",
+      "k": 6,
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": true,
+          "k": 6,
+          "row": 7,
+          "value": 3.0
+        }
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0006",
+      "k": 7,
+      "lanes": [
+        null,
+        {
+          "eor": true,
+          "k": 7,
+          "row": 5,
+          "value": 1.0
+        },
+        {
+          "eor": true,
+          "k": 7,
+          "row": 6,
+          "value": -1.0
+        },
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0006"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 2490 672 263 251
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/gaoo/Desktop/pe_framework/pe_array.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 1000.000000 112983640.000000
+cursor 1000.000000
+marker 1000.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 23
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/gaoo/Desktop/pe_framework/pe_array.fsdb"
+addSignal -h 15 /pe_array_testbench/GEN_PE[0]/u_pe_core/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope qa_valid
+addSignal -h 15 -holdScope qa_ready
+addSignal -h 15 -holdScope qa_row_idx[15:0]
+addSignal -h 15 -holdScope qa_val[15:0]
+addSignal -h 15 -holdScope qa_eor
+addSignal -h 15 -holdScope qb_valid
+addSignal -h 15 -holdScope qb_ready
+addSignal -h 15 -holdScope qb_col_idx[15:0]
+addSignal -h 15 -holdScope qb_val[15:0]
+addSignal -h 15 -holdScope qb_last
+addSignal -h 15 -holdScope qb_empty
+addSignal -h 15 -holdScope result_wr_en
+addSignal -h 15 -holdScope result_wr_data[47:0]
+addSignal -h 15 -holdScope result_full
+addSignal -h 15 -holdScope pe_busy
+addSignal -h 15 -holdScope pe_round_done
+addSignal -h 15 -holdScope pe_error
+addSignal -h 15 -UNSIGNED -holdScope state_q[3:0]
+addSignal -h 15 -UNSIGNED /pe_array_testbench/GEN_PE[1]/u_pe_core/state_q[3:0]
+addSignal -h 15 -UNSIGNED /pe_array_testbench/GEN_PE[2]/u_pe_core/state_q[3:0]
+addSignal -h 15 -UNSIGNED /pe_array_testbench/GEN_PE[3]/u_pe_core/state_q[3:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+
