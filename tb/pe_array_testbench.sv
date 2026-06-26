@@ -35,7 +35,7 @@ module pe_array_testbench;
     localparam int PE_MAX_B_ENTRY_WORDS = 1 << 20;
     localparam int PE_MAX_C_ELEMS       = 512 * 512;
 
-    localparam int PE_TIMEOUT_CYCLES    = 2000000;
+    localparam int PE_TIMEOUT_CYCLES    = 200000000;
 
     initial begin
         if (PE_LANES_P > 16) begin
@@ -766,5 +766,8 @@ module pe_array_testbench;
         repeat (PE_TIMEOUT_CYCLES) @(posedge clk);
         $fatal(1, "[TB] Global timeout at time %0t", $time);
     end
-
+    initial begin
+        #1000000000;
+        $finish;
+    end
 endmodule

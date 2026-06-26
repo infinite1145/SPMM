@@ -7,3 +7,9 @@ visual_result/
 tools/
 testcases/
 requirements.txt
+build_dir/
+*.log   
+*.key
+README.md
+.gitignore
+.vscode/

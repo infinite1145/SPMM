@@ -13,7 +13,8 @@ CHECK_DIR   := $(ROOT_DIR)/check_result
 VIS_DIR     := $(ROOT_DIR)/visual_result
 BUILD_DIR   := $(ROOT_DIR)/build_dir
 
-TOP_TB      := pe_array_testbench
+# Top-level integrated testbench
+TOP_TB      := spmm_top_testbench
 TB_FILE     := $(TB_DIR)/$(TOP_TB).sv
 FILELIST    := $(BUILD_DIR)/filelist.f
 SIMV        := $(BUILD_DIR)/simv
@@ -39,7 +40,8 @@ SPARSITY    ?= 0.3
 PE_LANES    ?= 4
 REORDER     ?= greedy
 
-CSV_HAS_ROW_IDX ?= 0
+# For row reorder, this should be 1 so C is written back in original row order.
+CSV_HAS_ROW_IDX ?= 1
 
 # ============================================================
 # Case paths
@@ -57,7 +59,12 @@ A_REORD_HEX  := $(CASE_PATH)/a_dense.hex
 B_HEX        := $(CASE_PATH)/b_dense.hex
 GOLDEN_C_HEX := $(CASE_PATH)/golden_c.hex
 
-FSDB        ?= pe_array.fsdb
+# Vector-wide A ROM init file
+A_CSV_VEC_HEX := $(CASE_PATH)/a_csv_vec.hex
+B_PTR_HEX     := $(CASE_PATH)/b_csr_row_ptr.hex
+B_ENT_HEX     := $(CASE_PATH)/b_csr_entry.hex
+
+FSDB        ?= spmm_top.fsdb
 FSDB_PATH   := $(ROOT_DIR)/$(FSDB)
 
 # ============================================================
@@ -74,12 +81,14 @@ RUN_N        := $(N)
 RUN_K        := $(K)
 RUN_PE_LANES := $(PE_LANES)
 RUN_CSV_HAS_ROW_IDX := $(CSV_HAS_ROW_IDX)
+RUN_CSV_VECTOR_COUNT := 0
 else
 RUN_M := $(shell $(PYTHON) -c 'import json; d=json.load(open("$(CASE_CONFIG)")); print(d.get("M", d.get("m")))')
 RUN_N := $(shell $(PYTHON) -c 'import json; d=json.load(open("$(CASE_CONFIG)")); print(d.get("N", d.get("n")))')
 RUN_K := $(shell $(PYTHON) -c 'import json; d=json.load(open("$(CASE_CONFIG)")); print(d.get("K", d.get("k")))')
 RUN_PE_LANES := $(shell $(PYTHON) -c 'import json; d=json.load(open("$(CASE_CONFIG)")); print(d.get("PE_LANES", d.get("pe_lanes", $(PE_LANES))))')
 RUN_CSV_HAS_ROW_IDX := $(shell $(PYTHON) -c 'import json; d=json.load(open("$(CASE_CONFIG)")); print(d.get("CSV_HAS_ROW_IDX", d.get("csv_has_row_idx", $(CSV_HAS_ROW_IDX))))')
+RUN_CSV_VECTOR_COUNT := $(shell $(PYTHON) -c 'import json; d=json.load(open("$(CASE_CONFIG)")); print(d.get("csv_vector_count", d.get("CSV_VECTOR_COUNT", 0)))')
 endif
 
 # ============================================================
@@ -104,6 +113,12 @@ VCS_FLAGS   := -full64 \
 # PE_LANES is compile-time because PE array generate depends on it.
 VCS_FLAGS += +define+PE_LANES=$(RUN_PE_LANES)
 
+# ROM/RAM init files for integrated top.
+VCS_FLAGS += +define+PE_A_INIT_FILE=\"$(A_CSV_VEC_HEX)\"
+VCS_FLAGS += +define+PE_B_PTR_INIT_FILE=\"$(B_PTR_HEX)\"
+VCS_FLAGS += +define+PE_B_ENT_INIT_FILE=\"$(B_ENT_HEX)\"
+VCS_FLAGS += +define+PE_C_INIT_FILE=\"\"
+
 ifneq ($(VERDI_HOME),)
 VCS_FLAGS += -P $(VERDI_HOME)/share/PLI/VCS/LINUX64/novas.tab \
                 $(VERDI_HOME)/share/PLI/VCS/LINUX64/pli.a
@@ -119,12 +134,11 @@ SIM_PLUSARGS := +CASE=$(CASE) \
                 +M=$(RUN_M) \
                 +N=$(RUN_N) \
                 +PE_LANES=$(RUN_PE_LANES) \
-                +CSV_HAS_ROW_IDX=$(RUN_CSV_HAS_ROW_IDX)
+                +CSV_HAS_ROW_IDX=$(RUN_CSV_HAS_ROW_IDX) \
+                +CSV_VECTOR_COUNT=$(RUN_CSV_VECTOR_COUNT)
 
 # K is not passed by default.
-# TB infers K from b_csr_row_ptr.hex.
-# If you really want to debug K mismatch, uncomment this:
-# SIM_PLUSARGS += +K=$(RUN_K)
+# TOP/TB do not need K directly. B row range is encoded by b_csr_row_ptr.hex.
 
 # ============================================================
 # Targets
@@ -147,7 +161,8 @@ gen: dirs
 		--M $(M) --N $(N) --K $(K) \
 		--sparsity $(SPARSITY) \
 		--pe_lanes $(PE_LANES) \
-		--reorder $(REORDER)
+		--reorder $(REORDER) \
+		--csv_has_row_idx $(CSV_HAS_ROW_IDX)
 
 # Re-run row reordering report for an existing testcase.
 .PHONY: reorder
@@ -165,6 +180,9 @@ filelist: dirs
 .PHONY: compile
 compile: filelist
 	@test -f $(CASE_CONFIG) || (echo "[COMPILE][ERR] Missing config: $(CASE_CONFIG). Run make gen CASE=$(CASE) first." && exit 1)
+	@test -f $(A_CSV_VEC_HEX) || (echo "[COMPILE][ERR] Missing vector CSV: $(A_CSV_VEC_HEX). Regenerate testcase with updated gen_matrix.py." && exit 1)
+	@test -f $(B_PTR_HEX) || (echo "[COMPILE][ERR] Missing B row_ptr: $(B_PTR_HEX)" && exit 1)
+	@test -f $(B_ENT_HEX) || (echo "[COMPILE][ERR] Missing B entry: $(B_ENT_HEX)" && exit 1)
 	$(VCS) $(VCS_FLAGS) -f $(FILELIST) -top $(TOP_TB) -l $(BUILD_DIR)/compile.log
 
 # Run existing testcase only. Does not generate testcase.
@@ -311,7 +329,7 @@ vis_all: vis_case vis_result
 # Use recursive make so gen_test can read the newly-generated config.
 .PHONY: gen_test
 gen_test:
-	$(MAKE) gen CASE=$(CASE) M=$(M) N=$(N) K=$(K) SEED=$(SEED) SPARSITY=$(SPARSITY) PE_LANES=$(PE_LANES) REORDER=$(REORDER)
+	$(MAKE) gen CASE=$(CASE) M=$(M) N=$(N) K=$(K) SEED=$(SEED) SPARSITY=$(SPARSITY) PE_LANES=$(PE_LANES) REORDER=$(REORDER) CSV_HAS_ROW_IDX=$(CSV_HAS_ROW_IDX)
 	$(MAKE) test CASE=$(CASE)
 	$(MAKE) check CASE=$(CASE)
 	$(MAKE) vis_all CASE=$(CASE)
@@ -339,7 +357,7 @@ help:
 	@echo "  make gen CASE=xxx M=16 N=16 K=16 PE_LANES=4"
 	@echo "      Generate testcase only"
 	@echo "  make test CASE=xxx"
-	@echo "      Compile and run existing testcase, dimensions read from config.json"
+	@echo "      Compile and run integrated SpMM TOP, dimensions read from config.json"
 	@echo "  make check CASE=xxx"
 	@echo "      Compare result with golden"
 	@echo "  make vis_case CASE=xxx"
