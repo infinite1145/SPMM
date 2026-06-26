@@ -289,8 +289,5 @@ module spmm_top_testbench;
         repeat (TIMEOUT_CYCLES) @(posedge clk);
         $fatal(1, "[TB] Global timeout at time %0t", $time);
     end
-    initial begin
-        #10000000;
-        $finish;
-    end
+
 endmodule

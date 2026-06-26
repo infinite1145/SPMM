@@ -459,7 +459,8 @@ module PE_SpMM_Top #(
         .b_req_k               (b_req_k),
         .b_req_active_mask     (b_req_active_mask),
 
-        .b_done                (load_b_done)
+        .b_done                (load_b_done),
+        .pe_round_done         (pe_round_done)
     );
 
     // ============================================================

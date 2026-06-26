@@ -22,7 +22,7 @@ module PE_Load_A #(
     output logic [A_ADDR_W-1:0]          a_rom_addra,
     input  wire [32*(2+PE_LANES)-1:0]    a_rom_douta,
 
-    // QA channel to PE array
+    // QA channel to PE array / QA FIFO
     output logic [PE_LANES-1:0]                 qa_valid,
     input  wire  [PE_LANES-1:0]                 qa_ready,
     output logic [PE_LANES-1:0][IDX_W-1:0]      qa_row_idx,
@@ -36,7 +36,11 @@ module PE_Load_A #(
     output logic [PE_LANES-1:0]      b_req_active_mask,
 
     // Response from Load_B
-    input  wire b_done
+    input  wire b_done,
+
+    // PE round done feedback.
+    // One pulse means the corresponding PE has finished one QA/QB round.
+    input  wire [PE_LANES-1:0] pe_round_done
 );
 
     localparam int A_VEC_W = 32 * (2 + PE_LANES);
@@ -49,6 +53,15 @@ module PE_Load_A #(
         LA_S_SEND_QA,
         LA_S_SEND_B_REQ,
         LA_S_WAIT_B_DONE,
+
+        // Old pending vector has not finished yet.
+        // Current vector has already sent QA/B, so wait here before issuing more.
+        LA_S_WAIT_OLD_PE_DONE,
+
+        // All vectors have been issued.
+        // Wait for the last pending vector to really finish.
+        LA_S_WAIT_LAST_PE_DONE,
+
         LA_S_NEXT,
         LA_S_DONE
     } la_state_e;
@@ -73,6 +86,27 @@ module PE_Load_A #(
     logic [PE_LANES-1:0] dec_valid_mask;
     logic [PE_LANES-1:0] dec_eor_mask;
 
+    // ============================================================
+    // One-vector-lookahead bookkeeping
+    //
+    // pending_* records the older outstanding vector.
+    // current_done_seen records current lookahead vector done pulses before
+    // it is promoted to pending.
+    // ============================================================
+
+    logic pending_valid;
+    logic [PE_LANES-1:0] pending_mask_reg;
+    logic [PE_LANES-1:0] pending_done_seen;
+
+    logic [PE_LANES-1:0] pending_remaining;
+    logic [PE_LANES-1:0] pending_done_fire;
+    logic pending_done_now;
+
+    logic [PE_LANES-1:0] current_done_seen;
+    logic [PE_LANES-1:0] current_done_fire;
+
+    logic current_is_last;
+
     integer p;
 
     function automatic logic [31:0] get_word(
@@ -91,6 +125,28 @@ module PE_Load_A #(
 
     assign dec_valid_mask = dec_word1[0  +: PE_LANES];
     assign dec_eor_mask   = dec_word1[16 +: PE_LANES];
+
+    assign current_is_last = ((vector_idx + 1) >= csv_vector_count);
+
+    // Old pending lanes that have not finished yet.
+    assign pending_remaining =
+        pending_valid ? (pending_mask_reg & ~pending_done_seen) : '0;
+
+    // A pe_round_done pulse first belongs to old pending if that lane is still waiting.
+    assign pending_done_fire = pe_round_done & pending_remaining;
+
+    // Only pulses not belonging to old pending are allowed to count as current done.
+    // This prevents overlapping-lane done pulses from being mis-attributed.
+    assign current_done_fire =
+        pe_round_done & valid_mask_reg & ~pending_remaining;
+
+    assign pending_done_now =
+        (!pending_valid) ||
+        ((((pending_done_seen | pending_done_fire) & pending_mask_reg) == pending_mask_reg));
+
+    // ============================================================
+    // Combinational control
+    // ============================================================
 
     always_comb begin
         a_rom_ena         = 1'b0;
@@ -113,7 +169,11 @@ module PE_Load_A #(
         unique case (state)
             LA_S_IDLE: begin
                 if (start) begin
-                    state_n = LA_S_REQ_A;
+                    if (csv_vector_count == 0) begin
+                        state_n = LA_S_DONE;
+                    end else begin
+                        state_n = LA_S_REQ_A;
+                    end
                 end
             end
 
@@ -128,8 +188,7 @@ module PE_Load_A #(
             end
 
             LA_S_DECODE_A: begin
-                // 注意：这里必须用当前 a_vec_reg 解出来的 dec_valid_mask，
-                // 不能用 valid_mask_reg，否则会拿到上一轮 vector 的 valid_mask。
+                // Use decoded current vector mask, not previous valid_mask_reg.
                 if (dec_valid_mask == '0) begin
                     state_n = LA_S_NEXT;
                 end else begin
@@ -155,13 +214,46 @@ module PE_Load_A #(
 
             LA_S_WAIT_B_DONE: begin
                 if (b_done) begin
-                    state_n = LA_S_NEXT;
+                    // Current vector's B row has been pushed into downstream FIFO.
+                    // If old pending still has unfinished PE lanes, do not issue more.
+                    if (pending_valid && !pending_done_now) begin
+                        state_n = LA_S_WAIT_OLD_PE_DONE;
+                    end else begin
+                        if (current_is_last) begin
+                            state_n = LA_S_WAIT_LAST_PE_DONE;
+                        end else begin
+                            state_n = LA_S_NEXT;
+                        end
+                    end
+                end
+            end
+
+            LA_S_WAIT_OLD_PE_DONE: begin
+                // Wait until old pending vector really finishes.
+                // Then promote current vector to pending in sequential logic.
+                if (pending_done_now) begin
+                    if (current_is_last) begin
+                        state_n = LA_S_WAIT_LAST_PE_DONE;
+                    end else begin
+                        state_n = LA_S_NEXT;
+                    end
+                end
+            end
+
+            LA_S_WAIT_LAST_PE_DONE: begin
+                if (pending_done_now) begin
+                    state_n = LA_S_DONE;
                 end
             end
 
             LA_S_NEXT: begin
                 if ((vector_idx + 1) >= csv_vector_count) begin
-                    state_n = LA_S_DONE;
+                    // This path mainly handles zero-valid final vectors.
+                    if (pending_valid && !pending_done_now) begin
+                        state_n = LA_S_WAIT_LAST_PE_DONE;
+                    end else begin
+                        state_n = LA_S_DONE;
+                    end
                 end else begin
                     state_n = LA_S_REQ_A;
                 end
@@ -181,30 +273,60 @@ module PE_Load_A #(
         endcase
     end
 
+    // ============================================================
+    // Sequential logic
+    // ============================================================
+
     always_ff @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
-            state          <= LA_S_IDLE;
-            vector_idx     <= '0;
-            a_vec_reg      <= '0;
-            row_base_reg   <= '0;
-            k_reg          <= '0;
-            valid_mask_reg <= '0;
-            eor_mask_reg   <= '0;
-            a_val_reg      <= '0;
-            row_idx_reg    <= '0;
-            qa_accepted    <= '0;
+            state              <= LA_S_IDLE;
+            vector_idx         <= '0;
+            a_vec_reg          <= '0;
+            row_base_reg       <= '0;
+            k_reg              <= '0;
+            valid_mask_reg     <= '0;
+            eor_mask_reg       <= '0;
+            a_val_reg          <= '0;
+            row_idx_reg        <= '0;
+            qa_accepted        <= '0;
+
+            pending_valid      <= 1'b0;
+            pending_mask_reg   <= '0;
+            pending_done_seen  <= '0;
+
+            current_done_seen  <= '0;
         end else begin
             state <= state_n;
 
-            if (state == LA_S_IDLE && start) begin
-                vector_idx  <= '0;
-                qa_accepted <= '0;
+            // Capture done pulses for old pending vector.
+            if (pending_valid) begin
+                pending_done_seen <= pending_done_seen | pending_done_fire;
             end
 
-            // A ROM 是同步读：
-            // LA_S_REQ_A 给地址和 ena；
-            // 下一个周期 ROM douta 有效；
-            // LA_S_WAIT_A 末尾把 douta 锁存进 a_vec_reg。
+            // Capture done pulses for current lookahead vector.
+            // These pulses may happen before current is promoted to pending.
+            if ((state == LA_S_SEND_B_REQ)       ||
+                (state == LA_S_WAIT_B_DONE)      ||
+                (state == LA_S_WAIT_OLD_PE_DONE) ||
+                (state == LA_S_WAIT_LAST_PE_DONE)) begin
+                current_done_seen <= current_done_seen | current_done_fire;
+            end
+
+            if (state == LA_S_IDLE && start) begin
+                vector_idx         <= '0;
+                qa_accepted        <= '0;
+
+                pending_valid      <= 1'b0;
+                pending_mask_reg   <= '0;
+                pending_done_seen  <= '0;
+
+                current_done_seen  <= '0;
+            end
+
+            // A ROM is synchronous-read:
+            // LA_S_REQ_A gives address and ena.
+            // In the next cycle, ROM douta is valid.
+            // LA_S_WAIT_A latches douta into a_vec_reg.
             if (state == LA_S_WAIT_A) begin
                 a_vec_reg <= a_rom_douta;
             end
@@ -225,15 +347,42 @@ module PE_Load_A #(
                     if (csv_has_row_idx) begin
                         row_idx_reg[p] <= lane_word[31:16];
                     end else begin
-                        row_idx_reg[p] <= dec_word0[31:16] + p[IDX_W-1:0];
+                        row_idx_reg[p] <= dec_word0[31:16] + p;
                     end
                 end
 
-                qa_accepted <= '0;
+                qa_accepted       <= '0;
+                current_done_seen <= '0;
             end
 
             if (state == LA_S_SEND_QA) begin
                 qa_accepted <= qa_accepted | qa_fire;
+            end
+
+            // Promote current vector to pending.
+            //
+            // This happens when:
+            //   1. current B row is done and there is no unfinished old pending; or
+            //   2. we were waiting for old pending, and old pending just finished.
+            //
+            // Important:
+            // pending_done_seen must inherit current_done_seen.
+            if ((state == LA_S_WAIT_B_DONE && b_done && (!pending_valid || pending_done_now)) ||
+                (state == LA_S_WAIT_OLD_PE_DONE && pending_done_now)) begin
+
+                pending_valid     <= 1'b1;
+                pending_mask_reg  <= valid_mask_reg;
+                pending_done_seen <= current_done_seen | current_done_fire;
+
+                current_done_seen <= '0;
+            end
+
+            // Final pending vector has really completed.
+            if (state == LA_S_WAIT_LAST_PE_DONE && pending_done_now) begin
+                pending_valid      <= 1'b0;
+                pending_mask_reg   <= '0;
+                pending_done_seen  <= '0;
+                current_done_seen  <= '0;
             end
 
             if (state == LA_S_NEXT) begin
@@ -245,7 +394,13 @@ module PE_Load_A #(
             end
 
             if (state == LA_S_DONE && !start) begin
-                vector_idx <= '0;
+                vector_idx         <= '0;
+
+                pending_valid      <= 1'b0;
+                pending_mask_reg   <= '0;
+                pending_done_seen  <= '0;
+
+                current_done_seen  <= '0;
             end
         end
     end
