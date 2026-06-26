@@ -14,11 +14,32 @@
 `define PE_BUF_DEPTH          512
 `define PE_RESULT_FIFO_DEPTH  128
 
-// Compile-time PE lane count used by the simulation testbench.
-// RTL integration can override this with +define+PE_PE_LANES=<N> if needed.
-`ifndef PE_PE_LANES
-`define PE_PE_LANES           4
+// -----------------------------------------------------------------------------
+// Fixed 64PE configuration.
+//
+// Current RTL branch uses fixed 64PE CSV vector format:
+//   word0          = {row_base[15:0], k[15:0]}
+//   word1          = valid_mask[31:0]
+//   word2          = valid_mask[63:32]
+//   word3          = eor_mask[31:0]
+//   word4          = eor_mask[63:32]
+//   word5~word68   = lane_word[0]~lane_word[63]
+//
+// Therefore PE_LANES must be 64.
+// -----------------------------------------------------------------------------
+
+`ifndef PE_LANES
+`define PE_LANES              64
 `endif
+
+// Legacy project macro. Keep it consistent with fixed 64PE flow.
+`ifndef PE_PE_LANES
+`define PE_PE_LANES           64
+`endif
+
+`define PE_CSV_MASK_WORDS     2
+`define PE_CSV_WORDS_PER_VEC  69
+`define PE_CSV_VECTOR_W       (32 * `PE_CSV_WORDS_PER_VEC)
 
 // Testbench memory limits. These are simulation infrastructure macros.
 `ifndef PE_TB_MAX_CSV_WORDS
@@ -38,7 +59,7 @@
 `endif
 
 `ifndef PE_TB_TIMEOUT_CYCLES
-`define PE_TB_TIMEOUT_CYCLES  2000000
+`define PE_TB_TIMEOUT_CYCLES  20000000
 `endif
 
 // Optional RTL switches. Keep undefined by default.

@@ -2,7 +2,7 @@
 `include "pe_defines.svh"
 
 `ifndef PE_LANES
-`define PE_LANES 4
+`define PE_LANES 64
 `endif
 
 `ifndef PE_A_INIT_FILE
@@ -72,6 +72,19 @@ module spmm_top_testbench;
     int csv_has_row_idx_cfg;
 
     int c_elems;
+
+    // ============================================================
+    // 64PE format guard
+    // ============================================================
+
+    initial begin
+        if (PE_LANES_P != 64) begin
+            $fatal(1,
+                "[TB] This version uses fixed 64PE CSV format. Compile with +define+PE_LANES=64, current PE_LANES=%0d",
+                PE_LANES_P
+            );
+        end
+    end
 
     // ============================================================
     // Clock / reset
@@ -247,6 +260,7 @@ module spmm_top_testbench;
         cfg_csv_has_row_idx  = csv_has_row_idx_cfg[0];
 
         $display("[TB] CASE              = %s", case_name);
+        $display("[TB] PE_LANES          = %0d", PE_LANES_P);
         $display("[TB] M                 = %0d", M_cfg);
         $display("[TB] N                 = %0d", N_cfg);
         $display("[TB] CSV_VECTOR_COUNT  = %0d", csv_vector_count_cfg);

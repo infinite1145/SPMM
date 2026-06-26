@@ -2,7 +2,7 @@
 `default_nettype none
 
 module PE_Load_A #(
-    parameter int PE_LANES = 4,
+    parameter int PE_LANES = 64,
     parameter int DATA_W   = 16,
     parameter int IDX_W    = 16,
     parameter int A_ADDR_W = 16
@@ -18,9 +18,16 @@ module PE_Load_A #(
     input  wire        csv_has_row_idx,
 
     // A vector ROM, synchronous read, 1-cycle latency
+    // 64PE fixed CSV format:
+    // word0              = {row_base[15:0], k[15:0]}
+    // word1              = valid_mask[31:0]
+    // word2              = valid_mask[63:32]
+    // word3              = eor_mask[31:0]
+    // word4              = eor_mask[63:32]
+    // word5 ~ word68     = lane_word[0] ~ lane_word[63]
     output logic                         a_rom_ena,
     output logic [A_ADDR_W-1:0]          a_rom_addra,
-    input  wire [32*(2+PE_LANES)-1:0]    a_rom_douta,
+    input  wire [32*69-1:0]              a_rom_douta,
 
     // QA channel to PE array / QA FIFO
     output logic [PE_LANES-1:0]                 qa_valid,
@@ -43,7 +50,12 @@ module PE_Load_A #(
     input  wire [PE_LANES-1:0] pe_round_done
 );
 
-    localparam int A_VEC_W = 32 * (2 + PE_LANES);
+    localparam int A_VEC_W              = 32 * 69;
+    localparam int VALID_MASK_LO_WORD   = 1;
+    localparam int VALID_MASK_HI_WORD   = 2;
+    localparam int EOR_MASK_LO_WORD     = 3;
+    localparam int EOR_MASK_HI_WORD     = 4;
+    localparam int LANE_WORD_BASE       = 5;
 
     typedef enum logic [3:0] {
         LA_S_IDLE,
@@ -82,7 +94,11 @@ module PE_Load_A #(
     logic [PE_LANES-1:0] qa_fire;
 
     logic [31:0] dec_word0;
-    logic [31:0] dec_word1;
+    logic [31:0] dec_valid_mask_lo;
+    logic [31:0] dec_valid_mask_hi;
+    logic [31:0] dec_eor_mask_lo;
+    logic [31:0] dec_eor_mask_hi;
+
     logic [PE_LANES-1:0] dec_valid_mask;
     logic [PE_LANES-1:0] dec_eor_mask;
 
@@ -120,11 +136,20 @@ module PE_Load_A #(
 
     assign qa_fire = qa_valid & qa_ready;
 
-    assign dec_word0 = get_word(a_vec_reg, 0);
-    assign dec_word1 = get_word(a_vec_reg, 1);
+    // ============================================================
+    // 64PE fixed CSV decode
+    // ============================================================
 
-    assign dec_valid_mask = dec_word1[0  +: PE_LANES];
-    assign dec_eor_mask   = dec_word1[16 +: PE_LANES];
+    assign dec_word0 = get_word(a_vec_reg, 0);
+
+    assign dec_valid_mask_lo = get_word(a_vec_reg, VALID_MASK_LO_WORD);
+    assign dec_valid_mask_hi = get_word(a_vec_reg, VALID_MASK_HI_WORD);
+
+    assign dec_eor_mask_lo   = get_word(a_vec_reg, EOR_MASK_LO_WORD);
+    assign dec_eor_mask_hi   = get_word(a_vec_reg, EOR_MASK_HI_WORD);
+
+    assign dec_valid_mask = {dec_valid_mask_hi, dec_valid_mask_lo};
+    assign dec_eor_mask   = {dec_eor_mask_hi, dec_eor_mask_lo};
 
     assign current_is_last = ((vector_idx + 1) >= csv_vector_count);
 
@@ -340,7 +365,7 @@ module PE_Load_A #(
                 valid_mask_reg <= dec_valid_mask;
 
                 for (p = 0; p < PE_LANES; p = p + 1) begin
-                    lane_word = get_word(a_vec_reg, 2 + p);
+                    lane_word = get_word(a_vec_reg, LANE_WORD_BASE + p);
 
                     a_val_reg[p] <= lane_word[DATA_W-1:0];
 

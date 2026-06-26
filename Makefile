@@ -37,11 +37,22 @@ N           ?= 16
 K           ?= 16
 SEED        ?= 1
 SPARSITY    ?= 0.3
-PE_LANES    ?= 4
+
+# Fixed 64PE version.
+# Do not override this unless all RTL/A-vector format is changed together.
+PE_LANES    := 64
+
 REORDER     ?= greedy
 
 # For row reorder, this should be 1 so C is written back in original row order.
 CSV_HAS_ROW_IDX ?= 1
+
+# 64PE fixed A vector format:
+# word0 + valid_mask[31:0] + valid_mask[63:32]
+#       + eor_mask[31:0] + eor_mask[63:32]
+#       + 64 lane words
+CSV_WORDS_PER_VECTOR_64 := 69
+CSV_VECTOR_WIDTH_64     := 2208
 
 # ============================================================
 # Case paths
@@ -71,6 +82,7 @@ FSDB_PATH   := $(ROOT_DIR)/$(FSDB)
 # Read generated testcase config if it exists
 # For make gen, config may not exist yet, so fallback to command-line defaults.
 # For make test/check/vis, config should exist and will be used automatically.
+# PE_LANES is fixed to 64 in this RTL branch.
 # ============================================================
 
 CONFIG_EXISTS := $(wildcard $(CASE_CONFIG))
@@ -79,14 +91,14 @@ ifeq ($(CONFIG_EXISTS),)
 RUN_M        := $(M)
 RUN_N        := $(N)
 RUN_K        := $(K)
-RUN_PE_LANES := $(PE_LANES)
+RUN_PE_LANES := 64
 RUN_CSV_HAS_ROW_IDX := $(CSV_HAS_ROW_IDX)
 RUN_CSV_VECTOR_COUNT := 0
 else
 RUN_M := $(shell $(PYTHON) -c 'import json; d=json.load(open("$(CASE_CONFIG)")); print(d.get("M", d.get("m")))')
 RUN_N := $(shell $(PYTHON) -c 'import json; d=json.load(open("$(CASE_CONFIG)")); print(d.get("N", d.get("n")))')
 RUN_K := $(shell $(PYTHON) -c 'import json; d=json.load(open("$(CASE_CONFIG)")); print(d.get("K", d.get("k")))')
-RUN_PE_LANES := $(shell $(PYTHON) -c 'import json; d=json.load(open("$(CASE_CONFIG)")); print(d.get("PE_LANES", d.get("pe_lanes", $(PE_LANES))))')
+RUN_PE_LANES := 64
 RUN_CSV_HAS_ROW_IDX := $(shell $(PYTHON) -c 'import json; d=json.load(open("$(CASE_CONFIG)")); print(d.get("CSV_HAS_ROW_IDX", d.get("csv_has_row_idx", $(CSV_HAS_ROW_IDX))))')
 RUN_CSV_VECTOR_COUNT := $(shell $(PYTHON) -c 'import json; d=json.load(open("$(CASE_CONFIG)")); print(d.get("csv_vector_count", d.get("CSV_VECTOR_COUNT", 0)))')
 endif
@@ -110,8 +122,8 @@ VCS_FLAGS   := -full64 \
                +lint=TFIPC-L \
                -o $(SIMV)
 
-# PE_LANES is compile-time because PE array generate depends on it.
-VCS_FLAGS += +define+PE_LANES=$(RUN_PE_LANES)
+# Fixed 64PE compile-time define.
+VCS_FLAGS += +define+PE_LANES=64
 
 # ROM/RAM init files for integrated top.
 VCS_FLAGS += +define+PE_A_INIT_FILE=\"$(A_CSV_VEC_HEX)\"
@@ -133,7 +145,7 @@ SIM_PLUSARGS := +CASE=$(CASE) \
                 +FSDB_FILE=$(FSDB_PATH) \
                 +M=$(RUN_M) \
                 +N=$(RUN_N) \
-                +PE_LANES=$(RUN_PE_LANES) \
+                +PE_LANES=64 \
                 +CSV_HAS_ROW_IDX=$(RUN_CSV_HAS_ROW_IDX) \
                 +CSV_VECTOR_COUNT=$(RUN_CSV_VECTOR_COUNT)
 
@@ -160,7 +172,7 @@ gen: dirs
 		--seed $(SEED) \
 		--M $(M) --N $(N) --K $(K) \
 		--sparsity $(SPARSITY) \
-		--pe_lanes $(PE_LANES) \
+		--pe_lanes 64 \
 		--reorder $(REORDER) \
 		--csv_has_row_idx $(CSV_HAS_ROW_IDX)
 
@@ -168,7 +180,7 @@ gen: dirs
 .PHONY: reorder
 reorder:
 	@test -f $(CASE_CONFIG) || (echo "[REORDER][ERR] Missing config: $(CASE_CONFIG)" && exit 1)
-	$(PYTHON) $(REORDER_PY) --case_dir $(CASE_PATH) --pe_lanes $(RUN_PE_LANES)
+	$(PYTHON) $(REORDER_PY) --case_dir $(CASE_PATH) --pe_lanes 64
 
 .PHONY: filelist
 filelist: dirs
@@ -177,9 +189,13 @@ filelist: dirs
 	@echo "$(TB_FILE)" >> $(FILELIST)
 	@cat $(FILELIST)
 
+.PHONY: check_case64
+check_case64:
+	@test -f $(CASE_CONFIG) || (echo "[CASE64][ERR] Missing config: $(CASE_CONFIG). Run make gen CASE=$(CASE) first." && exit 1)
+	@$(PYTHON) -c 'import json,sys; d=json.load(open("$(CASE_CONFIG)")); pe=int(d.get("PE_LANES", d.get("pe_lanes", -1))); wpv=int(d.get("csv_words_per_vector", -1)); width=int(d.get("csv_vector_width", -1)); ok=(pe==64 and wpv==69 and width==2208); print("[CASE64] PE_LANES=%s csv_words_per_vector=%s csv_vector_width=%s" % (pe, wpv, width)); sys.exit(0 if ok else 1)' || (echo "[CASE64][ERR] This testcase is not generated for fixed 64PE format. Regenerate with: make gen CASE=$(CASE) M=$(M) N=$(N) K=$(K)" && exit 1)
+
 .PHONY: compile
-compile: filelist
-	@test -f $(CASE_CONFIG) || (echo "[COMPILE][ERR] Missing config: $(CASE_CONFIG). Run make gen CASE=$(CASE) first." && exit 1)
+compile: filelist check_case64
 	@test -f $(A_CSV_VEC_HEX) || (echo "[COMPILE][ERR] Missing vector CSV: $(A_CSV_VEC_HEX). Regenerate testcase with updated gen_matrix.py." && exit 1)
 	@test -f $(B_PTR_HEX) || (echo "[COMPILE][ERR] Missing B row_ptr: $(B_PTR_HEX)" && exit 1)
 	@test -f $(B_ENT_HEX) || (echo "[COMPILE][ERR] Missing B entry: $(B_ENT_HEX)" && exit 1)
@@ -329,7 +345,7 @@ vis_all: vis_case vis_result
 # Use recursive make so gen_test can read the newly-generated config.
 .PHONY: gen_test
 gen_test:
-	$(MAKE) gen CASE=$(CASE) M=$(M) N=$(N) K=$(K) SEED=$(SEED) SPARSITY=$(SPARSITY) PE_LANES=$(PE_LANES) REORDER=$(REORDER) CSV_HAS_ROW_IDX=$(CSV_HAS_ROW_IDX)
+	$(MAKE) gen CASE=$(CASE) M=$(M) N=$(N) K=$(K) SEED=$(SEED) SPARSITY=$(SPARSITY) REORDER=$(REORDER) CSV_HAS_ROW_IDX=$(CSV_HAS_ROW_IDX)
 	$(MAKE) test CASE=$(CASE)
 	$(MAKE) check CASE=$(CASE)
 	$(MAKE) vis_all CASE=$(CASE)
@@ -354,8 +370,8 @@ clean_all: clean clean_data
 .PHONY: help
 help:
 	@echo "Targets:"
-	@echo "  make gen CASE=xxx M=16 N=16 K=16 PE_LANES=4"
-	@echo "      Generate testcase only"
+	@echo "  make gen CASE=xxx M=16 N=16 K=16"
+	@echo "      Generate fixed-64PE testcase only"
 	@echo "  make test CASE=xxx"
 	@echo "      Compile and run integrated SpMM TOP, dimensions read from config.json"
 	@echo "  make check CASE=xxx"

@@ -2,7 +2,7 @@
 `default_nettype none
 
 module PE_SpMM_Top #(
-    parameter int PE_LANES        = 4,
+    parameter int PE_LANES        = 64,
     parameter int DATA_W          = 16,
     parameter int IDX_W           = 16,
 
@@ -49,7 +49,15 @@ module PE_SpMM_Top #(
 );
 
     localparam int RESULT_W  = IDX_W + IDX_W + DATA_W;
-    localparam int A_VEC_W   = 32 * (2 + PE_LANES);
+
+    // 64PE fixed CSV vector format:
+    // word0              = {row_base[15:0], k[15:0]}
+    // word1              = valid_mask[31:0]
+    // word2              = valid_mask[63:32]
+    // word3              = eor_mask[31:0]
+    // word4              = eor_mask[63:32]
+    // word5 ~ word68     = lane_word[0] ~ lane_word[63]
+    localparam int A_VEC_W   = 32 * 69;
 
     // QA FIFO payload:
     // {qa_eor, qa_row_idx, qa_val}
@@ -363,7 +371,6 @@ module PE_SpMM_Top #(
     // ============================================================
 
     PE_A_Vector_ROM #(
-        .PE_LANES  (PE_LANES),
         .ADDR_W    (A_ADDR_W),
         .DEPTH     (A_DEPTH),
         .INIT_FILE (A_INIT_FILE)
