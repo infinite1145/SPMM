@@ -1,0 +1,8578 @@
+{
+  "vectors": [
+    {
+      "eor_mask_hex": "0000",
+      "k": 0,
+      "lane_words_hex": [
+        "00080000",
+        "00364400",
+        "001FC200",
+        "00394200"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 0,
+          "lane": 1,
+          "logical_row": 54,
+          "physical_row": 1,
+          "value": 4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 0,
+          "lane": 2,
+          "logical_row": 31,
+          "physical_row": 2,
+          "value": -3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 0,
+          "lane": 3,
+          "logical_row": 57,
+          "physical_row": 3,
+          "value": 3.0
+        }
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 2,
+      "lane_words_hex": [
+        "00080000",
+        "0036C000",
+        "001FBC00",
+        "00390000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 2,
+          "lane": 1,
+          "logical_row": 54,
+          "physical_row": 1,
+          "value": -2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 2,
+          "lane": 2,
+          "logical_row": 31,
+          "physical_row": 2,
+          "value": -1.0
+        },
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 5,
+      "lane_words_hex": [
+        "00080000",
+        "0036BC00",
+        "001F3E00",
+        "00390000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 5,
+          "lane": 1,
+          "logical_row": 54,
+          "physical_row": 1,
+          "value": -1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 5,
+          "lane": 2,
+          "logical_row": 31,
+          "physical_row": 2,
+          "value": 1.5
+        },
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 7,
+      "lane_words_hex": [
+        "00080000",
+        "00360000",
+        "001FC200",
+        "0039B800"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 7,
+          "lane": 2,
+          "logical_row": 31,
+          "physical_row": 2,
+          "value": -3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 7,
+          "lane": 3,
+          "logical_row": 57,
+          "physical_row": 3,
+          "value": -0.5
+        }
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 8,
+      "lane_words_hex": [
+        "0008C000",
+        "00360000",
+        "001FB800",
+        "00393800"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 8,
+          "lane": 0,
+          "logical_row": 8,
+          "physical_row": 0,
+          "value": -2.0
+        },
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 8,
+          "lane": 2,
+          "logical_row": 31,
+          "physical_row": 2,
+          "value": -0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 8,
+          "lane": 3,
+          "logical_row": 57,
+          "physical_row": 3,
+          "value": 0.5
+        }
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "000D"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 11,
+      "lane_words_hex": [
+        "00084400",
+        "00364400",
+        "001F0000",
+        "00390000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 11,
+          "lane": 0,
+          "logical_row": 8,
+          "physical_row": 0,
+          "value": 4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 11,
+          "lane": 1,
+          "logical_row": 54,
+          "physical_row": 1,
+          "value": 4.0
+        },
+        null,
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 12,
+      "lane_words_hex": [
+        "00080000",
+        "00360000",
+        "001FC400",
+        "00390000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 12,
+          "lane": 2,
+          "logical_row": 31,
+          "physical_row": 2,
+          "value": -4.0
+        },
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 14,
+      "lane_words_hex": [
+        "00083E00",
+        "00364200",
+        "001F0000",
+        "00390000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 14,
+          "lane": 0,
+          "logical_row": 8,
+          "physical_row": 0,
+          "value": 1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 14,
+          "lane": 1,
+          "logical_row": 54,
+          "physical_row": 1,
+          "value": 3.0
+        },
+        null,
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 16,
+      "lane_words_hex": [
+        "00080000",
+        "00364000",
+        "001F0000",
+        "00390000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 16,
+          "lane": 1,
+          "logical_row": 54,
+          "physical_row": 1,
+          "value": 2.0
+        },
+        null,
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 17,
+      "lane_words_hex": [
+        "00083E00",
+        "00360000",
+        "001F0000",
+        "00390000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 17,
+          "lane": 0,
+          "logical_row": 8,
+          "physical_row": 0,
+          "value": 1.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 18,
+      "lane_words_hex": [
+        "00083800",
+        "00360000",
+        "001F0000",
+        "00390000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 18,
+          "lane": 0,
+          "logical_row": 8,
+          "physical_row": 0,
+          "value": 0.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 19,
+      "lane_words_hex": [
+        "00080000",
+        "00360000",
+        "001F0000",
+        "0039BE00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 19,
+          "lane": 3,
+          "logical_row": 57,
+          "physical_row": 3,
+          "value": -1.5
+        }
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 21,
+      "lane_words_hex": [
+        "00083E00",
+        "00363800",
+        "001F0000",
+        "00394000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 21,
+          "lane": 0,
+          "logical_row": 8,
+          "physical_row": 0,
+          "value": 1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 21,
+          "lane": 1,
+          "logical_row": 54,
+          "physical_row": 1,
+          "value": 0.5
+        },
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 21,
+          "lane": 3,
+          "logical_row": 57,
+          "physical_row": 3,
+          "value": 2.0
+        }
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "000B"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 22,
+      "lane_words_hex": [
+        "00084000",
+        "00360000",
+        "001F0000",
+        "00393800"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 22,
+          "lane": 0,
+          "logical_row": 8,
+          "physical_row": 0,
+          "value": 2.0
+        },
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 22,
+          "lane": 3,
+          "logical_row": 57,
+          "physical_row": 3,
+          "value": 0.5
+        }
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0009"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 25,
+      "lane_words_hex": [
+        "00080000",
+        "00360000",
+        "001FC400",
+        "00390000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 25,
+          "lane": 2,
+          "logical_row": 31,
+          "physical_row": 2,
+          "value": -4.0
+        },
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 27,
+      "lane_words_hex": [
+        "0008C400",
+        "00364400",
+        "001F0000",
+        "00390000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 27,
+          "lane": 0,
+          "logical_row": 8,
+          "physical_row": 0,
+          "value": -4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 27,
+          "lane": 1,
+          "logical_row": 54,
+          "physical_row": 1,
+          "value": 4.0
+        },
+        null,
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 29,
+      "lane_words_hex": [
+        "00080000",
+        "00360000",
+        "001F4200",
+        "0039BE00"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 29,
+          "lane": 2,
+          "logical_row": 31,
+          "physical_row": 2,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 29,
+          "lane": 3,
+          "logical_row": 57,
+          "physical_row": 3,
+          "value": -1.5
+        }
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0007",
+      "k": 30,
+      "lane_words_hex": [
+        "00084400",
+        "0036C200",
+        "001F4400",
+        "0039BC00"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "4400",
+          "k": 30,
+          "lane": 0,
+          "logical_row": 8,
+          "physical_row": 0,
+          "value": 4.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "C200",
+          "k": 30,
+          "lane": 1,
+          "logical_row": 54,
+          "physical_row": 1,
+          "value": -3.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "4400",
+          "k": 30,
+          "lane": 2,
+          "logical_row": 31,
+          "physical_row": 2,
+          "value": 4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 30,
+          "lane": 3,
+          "logical_row": 57,
+          "physical_row": 3,
+          "value": -1.0
+        }
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "000F"
+    },
+    {
+      "eor_mask_hex": "0008",
+      "k": 31,
+      "lane_words_hex": [
+        "00080000",
+        "00360000",
+        "001F0000",
+        "0039C200"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "C200",
+          "k": 31,
+          "lane": 3,
+          "logical_row": 57,
+          "physical_row": 3,
+          "value": -3.0
+        }
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 0,
+      "lane_words_hex": [
+        "000CC000",
+        "00120000",
+        "00220000",
+        "00380000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 0,
+          "lane": 0,
+          "logical_row": 12,
+          "physical_row": 4,
+          "value": -2.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 1,
+      "lane_words_hex": [
+        "000C0000",
+        "00120000",
+        "00223E00",
+        "00380000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 1,
+          "lane": 2,
+          "logical_row": 34,
+          "physical_row": 6,
+          "value": 1.5
+        },
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 3,
+      "lane_words_hex": [
+        "000CBC00",
+        "00120000",
+        "00220000",
+        "00384000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 3,
+          "lane": 0,
+          "logical_row": 12,
+          "physical_row": 4,
+          "value": -1.0
+        },
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 3,
+          "lane": 3,
+          "logical_row": 56,
+          "physical_row": 7,
+          "value": 2.0
+        }
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0009"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 5,
+      "lane_words_hex": [
+        "000C0000",
+        "0012C200",
+        "0022BC00",
+        "00384400"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 5,
+          "lane": 1,
+          "logical_row": 18,
+          "physical_row": 5,
+          "value": -3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 5,
+          "lane": 2,
+          "logical_row": 34,
+          "physical_row": 6,
+          "value": -1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 5,
+          "lane": 3,
+          "logical_row": 56,
+          "physical_row": 7,
+          "value": 4.0
+        }
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 7,
+      "lane_words_hex": [
+        "000CC000",
+        "00120000",
+        "00220000",
+        "00380000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 7,
+          "lane": 0,
+          "logical_row": 12,
+          "physical_row": 4,
+          "value": -2.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 8,
+      "lane_words_hex": [
+        "000CC200",
+        "00120000",
+        "00220000",
+        "00383C00"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 8,
+          "lane": 0,
+          "logical_row": 12,
+          "physical_row": 4,
+          "value": -3.0
+        },
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 8,
+          "lane": 3,
+          "logical_row": 56,
+          "physical_row": 7,
+          "value": 1.0
+        }
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0009"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 9,
+      "lane_words_hex": [
+        "000C0000",
+        "00120000",
+        "0022C200",
+        "0038BE00"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 9,
+          "lane": 2,
+          "logical_row": 34,
+          "physical_row": 6,
+          "value": -3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 9,
+          "lane": 3,
+          "logical_row": 56,
+          "physical_row": 7,
+          "value": -1.5
+        }
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 11,
+      "lane_words_hex": [
+        "000C0000",
+        "00120000",
+        "00220000",
+        "0038BC00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 11,
+          "lane": 3,
+          "logical_row": 56,
+          "physical_row": 7,
+          "value": -1.0
+        }
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 13,
+      "lane_words_hex": [
+        "000C0000",
+        "00123E00",
+        "0022BE00",
+        "00380000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 13,
+          "lane": 1,
+          "logical_row": 18,
+          "physical_row": 5,
+          "value": 1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 13,
+          "lane": 2,
+          "logical_row": 34,
+          "physical_row": 6,
+          "value": -1.5
+        },
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 14,
+      "lane_words_hex": [
+        "000C0000",
+        "0012B800",
+        "00220000",
+        "00380000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 14,
+          "lane": 1,
+          "logical_row": 18,
+          "physical_row": 5,
+          "value": -0.5
+        },
+        null,
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 17,
+      "lane_words_hex": [
+        "000C0000",
+        "00120000",
+        "00223C00",
+        "0038C000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 17,
+          "lane": 2,
+          "logical_row": 34,
+          "physical_row": 6,
+          "value": 1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 17,
+          "lane": 3,
+          "logical_row": 56,
+          "physical_row": 7,
+          "value": -2.0
+        }
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 18,
+      "lane_words_hex": [
+        "000C0000",
+        "0012BE00",
+        "00220000",
+        "00380000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 18,
+          "lane": 1,
+          "logical_row": 18,
+          "physical_row": 5,
+          "value": -1.5
+        },
+        null,
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 19,
+      "lane_words_hex": [
+        "000C3E00",
+        "00124200",
+        "00220000",
+        "00380000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 19,
+          "lane": 0,
+          "logical_row": 12,
+          "physical_row": 4,
+          "value": 1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 19,
+          "lane": 1,
+          "logical_row": 18,
+          "physical_row": 5,
+          "value": 3.0
+        },
+        null,
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 20,
+      "lane_words_hex": [
+        "000C0000",
+        "00120000",
+        "00220000",
+        "00383800"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 20,
+          "lane": 3,
+          "logical_row": 56,
+          "physical_row": 7,
+          "value": 0.5
+        }
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 21,
+      "lane_words_hex": [
+        "000C0000",
+        "00120000",
+        "00223E00",
+        "00380000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 21,
+          "lane": 2,
+          "logical_row": 34,
+          "physical_row": 6,
+          "value": 1.5
+        },
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 22,
+      "lane_words_hex": [
+        "000C0000",
+        "00124000",
+        "0022BC00",
+        "00383800"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 22,
+          "lane": 1,
+          "logical_row": 18,
+          "physical_row": 5,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 22,
+          "lane": 2,
+          "logical_row": 34,
+          "physical_row": 6,
+          "value": -1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 22,
+          "lane": 3,
+          "logical_row": 56,
+          "physical_row": 7,
+          "value": 0.5
+        }
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "0008",
+      "k": 23,
+      "lane_words_hex": [
+        "000C0000",
+        "00120000",
+        "00220000",
+        "00383E00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "3E00",
+          "k": 23,
+          "lane": 3,
+          "logical_row": 56,
+          "physical_row": 7,
+          "value": 1.5
+        }
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 24,
+      "lane_words_hex": [
+        "000CB800",
+        "0012BE00",
+        "00220000",
+        "00380000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 24,
+          "lane": 0,
+          "logical_row": 12,
+          "physical_row": 4,
+          "value": -0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 24,
+          "lane": 1,
+          "logical_row": 18,
+          "physical_row": 5,
+          "value": -1.5
+        },
+        null,
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 28,
+      "lane_words_hex": [
+        "000CC000",
+        "00123800",
+        "00220000",
+        "00380000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 28,
+          "lane": 0,
+          "logical_row": 12,
+          "physical_row": 4,
+          "value": -2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 28,
+          "lane": 1,
+          "logical_row": 18,
+          "physical_row": 5,
+          "value": 0.5
+        },
+        null,
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0003",
+      "k": 30,
+      "lane_words_hex": [
+        "000CBC00",
+        "0012C400",
+        "00223800",
+        "00380000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "BC00",
+          "k": 30,
+          "lane": 0,
+          "logical_row": 12,
+          "physical_row": 4,
+          "value": -1.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "C400",
+          "k": 30,
+          "lane": 1,
+          "logical_row": 18,
+          "physical_row": 5,
+          "value": -4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 30,
+          "lane": 2,
+          "logical_row": 34,
+          "physical_row": 6,
+          "value": 0.5
+        },
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0007"
+    },
+    {
+      "eor_mask_hex": "0004",
+      "k": 31,
+      "lane_words_hex": [
+        "000C0000",
+        "00120000",
+        "00224200",
+        "00380000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "4200",
+          "k": 31,
+          "lane": 2,
+          "logical_row": 34,
+          "physical_row": 6,
+          "value": 3.0
+        },
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 0,
+      "lane_words_hex": [
+        "00160000",
+        "00303E00",
+        "00030000",
+        "001D0000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 0,
+          "lane": 1,
+          "logical_row": 48,
+          "physical_row": 9,
+          "value": 1.5
+        },
+        null,
+        null
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 3,
+      "lane_words_hex": [
+        "0016C200",
+        "00303800",
+        "00030000",
+        "001D0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 3,
+          "lane": 0,
+          "logical_row": 22,
+          "physical_row": 8,
+          "value": -3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 3,
+          "lane": 1,
+          "logical_row": 48,
+          "physical_row": 9,
+          "value": 0.5
+        },
+        null,
+        null
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 6,
+      "lane_words_hex": [
+        "00160000",
+        "00300000",
+        "00030000",
+        "001DC200"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 6,
+          "lane": 3,
+          "logical_row": 29,
+          "physical_row": 11,
+          "value": -3.0
+        }
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 7,
+      "lane_words_hex": [
+        "0016C400",
+        "00300000",
+        "00033E00",
+        "001D4200"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 7,
+          "lane": 0,
+          "logical_row": 22,
+          "physical_row": 8,
+          "value": -4.0
+        },
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 7,
+          "lane": 2,
+          "logical_row": 3,
+          "physical_row": 10,
+          "value": 1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 7,
+          "lane": 3,
+          "logical_row": 29,
+          "physical_row": 11,
+          "value": 3.0
+        }
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "000D"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 9,
+      "lane_words_hex": [
+        "0016B800",
+        "00303C00",
+        "00034400",
+        "001D3C00"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 9,
+          "lane": 0,
+          "logical_row": 22,
+          "physical_row": 8,
+          "value": -0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 9,
+          "lane": 1,
+          "logical_row": 48,
+          "physical_row": 9,
+          "value": 1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 9,
+          "lane": 2,
+          "logical_row": 3,
+          "physical_row": 10,
+          "value": 4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 9,
+          "lane": 3,
+          "logical_row": 29,
+          "physical_row": 11,
+          "value": 1.0
+        }
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "000F"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 10,
+      "lane_words_hex": [
+        "00164000",
+        "00300000",
+        "00030000",
+        "001D0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 10,
+          "lane": 0,
+          "logical_row": 22,
+          "physical_row": 8,
+          "value": 2.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 11,
+      "lane_words_hex": [
+        "0016C000",
+        "00304000",
+        "00033800",
+        "001DC200"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 11,
+          "lane": 0,
+          "logical_row": 22,
+          "physical_row": 8,
+          "value": -2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 11,
+          "lane": 1,
+          "logical_row": 48,
+          "physical_row": 9,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 11,
+          "lane": 2,
+          "logical_row": 3,
+          "physical_row": 10,
+          "value": 0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 11,
+          "lane": 3,
+          "logical_row": 29,
+          "physical_row": 11,
+          "value": -3.0
+        }
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "000F"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 14,
+      "lane_words_hex": [
+        "00160000",
+        "0030B800",
+        "0003C400",
+        "001D0000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 14,
+          "lane": 1,
+          "logical_row": 48,
+          "physical_row": 9,
+          "value": -0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 14,
+          "lane": 2,
+          "logical_row": 3,
+          "physical_row": 10,
+          "value": -4.0
+        },
+        null
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 16,
+      "lane_words_hex": [
+        "00163C00",
+        "00300000",
+        "00030000",
+        "001D0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 16,
+          "lane": 0,
+          "logical_row": 22,
+          "physical_row": 8,
+          "value": 1.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 17,
+      "lane_words_hex": [
+        "00160000",
+        "00300000",
+        "00030000",
+        "001DBC00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 17,
+          "lane": 3,
+          "logical_row": 29,
+          "physical_row": 11,
+          "value": -1.0
+        }
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 19,
+      "lane_words_hex": [
+        "00163800",
+        "00300000",
+        "00030000",
+        "001D0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 19,
+          "lane": 0,
+          "logical_row": 22,
+          "physical_row": 8,
+          "value": 0.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 21,
+      "lane_words_hex": [
+        "00160000",
+        "00300000",
+        "00034200",
+        "001D0000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 21,
+          "lane": 2,
+          "logical_row": 3,
+          "physical_row": 10,
+          "value": 3.0
+        },
+        null
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 22,
+      "lane_words_hex": [
+        "0016C200",
+        "00304400",
+        "00030000",
+        "001D0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 22,
+          "lane": 0,
+          "logical_row": 22,
+          "physical_row": 8,
+          "value": -3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 22,
+          "lane": 1,
+          "logical_row": 48,
+          "physical_row": 9,
+          "value": 4.0
+        },
+        null,
+        null
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 24,
+      "lane_words_hex": [
+        "00160000",
+        "00300000",
+        "0003C000",
+        "001D0000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 24,
+          "lane": 2,
+          "logical_row": 3,
+          "physical_row": 10,
+          "value": -2.0
+        },
+        null
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0003",
+      "k": 29,
+      "lane_words_hex": [
+        "00163E00",
+        "00304200",
+        "0003C200",
+        "001DC200"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "3E00",
+          "k": 29,
+          "lane": 0,
+          "logical_row": 22,
+          "physical_row": 8,
+          "value": 1.5
+        },
+        {
+          "eor": true,
+          "fp16_hex": "4200",
+          "k": 29,
+          "lane": 1,
+          "logical_row": 48,
+          "physical_row": 9,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 29,
+          "lane": 2,
+          "logical_row": 3,
+          "physical_row": 10,
+          "value": -3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 29,
+          "lane": 3,
+          "logical_row": 29,
+          "physical_row": 11,
+          "value": -3.0
+        }
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "000F"
+    },
+    {
+      "eor_mask_hex": "000C",
+      "k": 31,
+      "lane_words_hex": [
+        "00160000",
+        "00300000",
+        "00034200",
+        "001D4000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "4200",
+          "k": 31,
+          "lane": 2,
+          "logical_row": 3,
+          "physical_row": 10,
+          "value": 3.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "4000",
+          "k": 31,
+          "lane": 3,
+          "logical_row": 29,
+          "physical_row": 11,
+          "value": 2.0
+        }
+      ],
+      "row_base": 8,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 1,
+      "lane_words_hex": [
+        "002E0000",
+        "00140000",
+        "000E0000",
+        "0005B800"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 1,
+          "lane": 3,
+          "logical_row": 5,
+          "physical_row": 15,
+          "value": -0.5
+        }
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 3,
+      "lane_words_hex": [
+        "002EC400",
+        "00143E00",
+        "000EBE00",
+        "00050000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 3,
+          "lane": 0,
+          "logical_row": 46,
+          "physical_row": 12,
+          "value": -4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 3,
+          "lane": 1,
+          "logical_row": 20,
+          "physical_row": 13,
+          "value": 1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 3,
+          "lane": 2,
+          "logical_row": 14,
+          "physical_row": 14,
+          "value": -1.5
+        },
+        null
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0007"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 6,
+      "lane_words_hex": [
+        "002E4000",
+        "00144200",
+        "000E3800",
+        "00050000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 6,
+          "lane": 0,
+          "logical_row": 46,
+          "physical_row": 12,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 6,
+          "lane": 1,
+          "logical_row": 20,
+          "physical_row": 13,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 6,
+          "lane": 2,
+          "logical_row": 14,
+          "physical_row": 14,
+          "value": 0.5
+        },
+        null
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0007"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 7,
+      "lane_words_hex": [
+        "002E0000",
+        "00140000",
+        "000E0000",
+        "00054400"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 7,
+          "lane": 3,
+          "logical_row": 5,
+          "physical_row": 15,
+          "value": 4.0
+        }
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 8,
+      "lane_words_hex": [
+        "002E0000",
+        "00143800",
+        "000EC400",
+        "00050000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 8,
+          "lane": 1,
+          "logical_row": 20,
+          "physical_row": 13,
+          "value": 0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 8,
+          "lane": 2,
+          "logical_row": 14,
+          "physical_row": 14,
+          "value": -4.0
+        },
+        null
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 10,
+      "lane_words_hex": [
+        "002E4000",
+        "00143E00",
+        "000E0000",
+        "00050000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 10,
+          "lane": 0,
+          "logical_row": 46,
+          "physical_row": 12,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 10,
+          "lane": 1,
+          "logical_row": 20,
+          "physical_row": 13,
+          "value": 1.5
+        },
+        null,
+        null
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 11,
+      "lane_words_hex": [
+        "002EBE00",
+        "00140000",
+        "000E0000",
+        "00050000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 11,
+          "lane": 0,
+          "logical_row": 46,
+          "physical_row": 12,
+          "value": -1.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 12,
+      "lane_words_hex": [
+        "002E0000",
+        "00140000",
+        "000E0000",
+        "00054400"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 12,
+          "lane": 3,
+          "logical_row": 5,
+          "physical_row": 15,
+          "value": 4.0
+        }
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 13,
+      "lane_words_hex": [
+        "002EC200",
+        "0014B800",
+        "000EBE00",
+        "00050000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 13,
+          "lane": 0,
+          "logical_row": 46,
+          "physical_row": 12,
+          "value": -3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 13,
+          "lane": 1,
+          "logical_row": 20,
+          "physical_row": 13,
+          "value": -0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 13,
+          "lane": 2,
+          "logical_row": 14,
+          "physical_row": 14,
+          "value": -1.5
+        },
+        null
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0007"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 15,
+      "lane_words_hex": [
+        "002EBC00",
+        "00140000",
+        "000E0000",
+        "00053E00"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 15,
+          "lane": 0,
+          "logical_row": 46,
+          "physical_row": 12,
+          "value": -1.0
+        },
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 15,
+          "lane": 3,
+          "logical_row": 5,
+          "physical_row": 15,
+          "value": 1.5
+        }
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0009"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 17,
+      "lane_words_hex": [
+        "002E3800",
+        "00140000",
+        "000E0000",
+        "00050000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 17,
+          "lane": 0,
+          "logical_row": 46,
+          "physical_row": 12,
+          "value": 0.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 18,
+      "lane_words_hex": [
+        "002E0000",
+        "00140000",
+        "000E0000",
+        "00054200"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 18,
+          "lane": 3,
+          "logical_row": 5,
+          "physical_row": 15,
+          "value": 3.0
+        }
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 21,
+      "lane_words_hex": [
+        "002E0000",
+        "00143C00",
+        "000E3E00",
+        "00050000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 21,
+          "lane": 1,
+          "logical_row": 20,
+          "physical_row": 13,
+          "value": 1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 21,
+          "lane": 2,
+          "logical_row": 14,
+          "physical_row": 14,
+          "value": 1.5
+        },
+        null
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 23,
+      "lane_words_hex": [
+        "002E0000",
+        "00140000",
+        "000E3800",
+        "00054200"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 23,
+          "lane": 2,
+          "logical_row": 14,
+          "physical_row": 14,
+          "value": 0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 23,
+          "lane": 3,
+          "logical_row": 5,
+          "physical_row": 15,
+          "value": 3.0
+        }
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0001",
+      "k": 24,
+      "lane_words_hex": [
+        "002EC200",
+        "00140000",
+        "000E0000",
+        "00050000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "C200",
+          "k": 24,
+          "lane": 0,
+          "logical_row": 46,
+          "physical_row": 12,
+          "value": -3.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 25,
+      "lane_words_hex": [
+        "002E0000",
+        "00140000",
+        "000E4000",
+        "00053800"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 25,
+          "lane": 2,
+          "logical_row": 14,
+          "physical_row": 14,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 25,
+          "lane": 3,
+          "logical_row": 5,
+          "physical_row": 15,
+          "value": 0.5
+        }
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "000C",
+      "k": 27,
+      "lane_words_hex": [
+        "002E0000",
+        "00140000",
+        "000EC400",
+        "0005C000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "C400",
+          "k": 27,
+          "lane": 2,
+          "logical_row": 14,
+          "physical_row": 14,
+          "value": -4.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "C000",
+          "k": 27,
+          "lane": 3,
+          "logical_row": 5,
+          "physical_row": 15,
+          "value": -2.0
+        }
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0002",
+      "k": 31,
+      "lane_words_hex": [
+        "002E0000",
+        "00143E00",
+        "000E0000",
+        "00050000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "3E00",
+          "k": 31,
+          "lane": 1,
+          "logical_row": 20,
+          "physical_row": 13,
+          "value": 1.5
+        },
+        null,
+        null
+      ],
+      "row_base": 12,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 0,
+      "lane_words_hex": [
+        "00330000",
+        "00110000",
+        "00340000",
+        "000A3C00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 0,
+          "lane": 3,
+          "logical_row": 10,
+          "physical_row": 19,
+          "value": 1.0
+        }
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 2,
+      "lane_words_hex": [
+        "00330000",
+        "0011BC00",
+        "00343800",
+        "000A0000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 2,
+          "lane": 1,
+          "logical_row": 17,
+          "physical_row": 17,
+          "value": -1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 2,
+          "lane": 2,
+          "logical_row": 52,
+          "physical_row": 18,
+          "value": 0.5
+        },
+        null
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 4,
+      "lane_words_hex": [
+        "00334200",
+        "00113800",
+        "00340000",
+        "000A0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 4,
+          "lane": 0,
+          "logical_row": 51,
+          "physical_row": 16,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 4,
+          "lane": 1,
+          "logical_row": 17,
+          "physical_row": 17,
+          "value": 0.5
+        },
+        null,
+        null
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 5,
+      "lane_words_hex": [
+        "00330000",
+        "0011C400",
+        "0034BC00",
+        "000A0000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 5,
+          "lane": 1,
+          "logical_row": 17,
+          "physical_row": 17,
+          "value": -4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 5,
+          "lane": 2,
+          "logical_row": 52,
+          "physical_row": 18,
+          "value": -1.0
+        },
+        null
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 7,
+      "lane_words_hex": [
+        "00334400",
+        "00110000",
+        "00340000",
+        "000A0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 7,
+          "lane": 0,
+          "logical_row": 51,
+          "physical_row": 16,
+          "value": 4.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 9,
+      "lane_words_hex": [
+        "00334200",
+        "0011C000",
+        "00340000",
+        "000A0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 9,
+          "lane": 0,
+          "logical_row": 51,
+          "physical_row": 16,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 9,
+          "lane": 1,
+          "logical_row": 17,
+          "physical_row": 17,
+          "value": -2.0
+        },
+        null,
+        null
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 11,
+      "lane_words_hex": [
+        "00330000",
+        "00110000",
+        "00340000",
+        "000AB800"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 11,
+          "lane": 3,
+          "logical_row": 10,
+          "physical_row": 19,
+          "value": -0.5
+        }
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 15,
+      "lane_words_hex": [
+        "0033C400",
+        "00110000",
+        "00340000",
+        "000A0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 15,
+          "lane": 0,
+          "logical_row": 51,
+          "physical_row": 16,
+          "value": -4.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 17,
+      "lane_words_hex": [
+        "00330000",
+        "00110000",
+        "0034C400",
+        "000A4000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 17,
+          "lane": 2,
+          "logical_row": 52,
+          "physical_row": 18,
+          "value": -4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 17,
+          "lane": 3,
+          "logical_row": 10,
+          "physical_row": 19,
+          "value": 2.0
+        }
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 19,
+      "lane_words_hex": [
+        "00330000",
+        "00110000",
+        "0034BC00",
+        "000ABE00"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 19,
+          "lane": 2,
+          "logical_row": 52,
+          "physical_row": 18,
+          "value": -1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 19,
+          "lane": 3,
+          "logical_row": 10,
+          "physical_row": 19,
+          "value": -1.5
+        }
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 20,
+      "lane_words_hex": [
+        "00334200",
+        "00110000",
+        "00340000",
+        "000A0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 20,
+          "lane": 0,
+          "logical_row": 51,
+          "physical_row": 16,
+          "value": 3.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 23,
+      "lane_words_hex": [
+        "00333800",
+        "00113E00",
+        "00340000",
+        "000A0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 23,
+          "lane": 0,
+          "logical_row": 51,
+          "physical_row": 16,
+          "value": 0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 23,
+          "lane": 1,
+          "logical_row": 17,
+          "physical_row": 17,
+          "value": 1.5
+        },
+        null,
+        null
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 24,
+      "lane_words_hex": [
+        "00330000",
+        "00110000",
+        "00344400",
+        "000A0000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 24,
+          "lane": 2,
+          "logical_row": 52,
+          "physical_row": 18,
+          "value": 4.0
+        },
+        null
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 25,
+      "lane_words_hex": [
+        "00330000",
+        "00110000",
+        "00340000",
+        "000A4200"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 25,
+          "lane": 3,
+          "logical_row": 10,
+          "physical_row": 19,
+          "value": 3.0
+        }
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 26,
+      "lane_words_hex": [
+        "00330000",
+        "00110000",
+        "00344200",
+        "000A4000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 26,
+          "lane": 2,
+          "logical_row": 52,
+          "physical_row": 18,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 26,
+          "lane": 3,
+          "logical_row": 10,
+          "physical_row": 19,
+          "value": 2.0
+        }
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0001",
+      "k": 27,
+      "lane_words_hex": [
+        "0033C000",
+        "00114000",
+        "0034B800",
+        "000A0000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "C000",
+          "k": 27,
+          "lane": 0,
+          "logical_row": 51,
+          "physical_row": 16,
+          "value": -2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 27,
+          "lane": 1,
+          "logical_row": 17,
+          "physical_row": 17,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 27,
+          "lane": 2,
+          "logical_row": 52,
+          "physical_row": 18,
+          "value": -0.5
+        },
+        null
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "0007"
+    },
+    {
+      "eor_mask_hex": "000E",
+      "k": 28,
+      "lane_words_hex": [
+        "00330000",
+        "0011C400",
+        "00343E00",
+        "000AC400"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "C400",
+          "k": 28,
+          "lane": 1,
+          "logical_row": 17,
+          "physical_row": 17,
+          "value": -4.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "3E00",
+          "k": 28,
+          "lane": 2,
+          "logical_row": 52,
+          "physical_row": 18,
+          "value": 1.5
+        },
+        {
+          "eor": true,
+          "fp16_hex": "C400",
+          "k": 28,
+          "lane": 3,
+          "logical_row": 10,
+          "physical_row": 19,
+          "value": -4.0
+        }
+      ],
+      "row_base": 16,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 0,
+      "lane_words_hex": [
+        "003C4000",
+        "003FBE00",
+        "00234200",
+        "00350000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 0,
+          "lane": 0,
+          "logical_row": 60,
+          "physical_row": 20,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 0,
+          "lane": 1,
+          "logical_row": 63,
+          "physical_row": 21,
+          "value": -1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 0,
+          "lane": 2,
+          "logical_row": 35,
+          "physical_row": 22,
+          "value": 3.0
+        },
+        null
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "0007"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 1,
+      "lane_words_hex": [
+        "003C3C00",
+        "003FBC00",
+        "00230000",
+        "00350000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 1,
+          "lane": 0,
+          "logical_row": 60,
+          "physical_row": 20,
+          "value": 1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 1,
+          "lane": 1,
+          "logical_row": 63,
+          "physical_row": 21,
+          "value": -1.0
+        },
+        null,
+        null
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 2,
+      "lane_words_hex": [
+        "003C0000",
+        "003F4000",
+        "00230000",
+        "00350000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 2,
+          "lane": 1,
+          "logical_row": 63,
+          "physical_row": 21,
+          "value": 2.0
+        },
+        null,
+        null
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 5,
+      "lane_words_hex": [
+        "003CC400",
+        "003F0000",
+        "0023C400",
+        "0035C200"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 5,
+          "lane": 0,
+          "logical_row": 60,
+          "physical_row": 20,
+          "value": -4.0
+        },
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 5,
+          "lane": 2,
+          "logical_row": 35,
+          "physical_row": 22,
+          "value": -4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 5,
+          "lane": 3,
+          "logical_row": 53,
+          "physical_row": 23,
+          "value": -3.0
+        }
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "000D"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 6,
+      "lane_words_hex": [
+        "003CBE00",
+        "003F3800",
+        "00230000",
+        "00350000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 6,
+          "lane": 0,
+          "logical_row": 60,
+          "physical_row": 20,
+          "value": -1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 6,
+          "lane": 1,
+          "logical_row": 63,
+          "physical_row": 21,
+          "value": 0.5
+        },
+        null,
+        null
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 7,
+      "lane_words_hex": [
+        "003C0000",
+        "003F3C00",
+        "00230000",
+        "00350000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 7,
+          "lane": 1,
+          "logical_row": 63,
+          "physical_row": 21,
+          "value": 1.0
+        },
+        null,
+        null
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 8,
+      "lane_words_hex": [
+        "003C0000",
+        "003F0000",
+        "00234400",
+        "0035BC00"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 8,
+          "lane": 2,
+          "logical_row": 35,
+          "physical_row": 22,
+          "value": 4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 8,
+          "lane": 3,
+          "logical_row": 53,
+          "physical_row": 23,
+          "value": -1.0
+        }
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 10,
+      "lane_words_hex": [
+        "003C0000",
+        "003F0000",
+        "0023C400",
+        "00350000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 10,
+          "lane": 2,
+          "logical_row": 35,
+          "physical_row": 22,
+          "value": -4.0
+        },
+        null
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 12,
+      "lane_words_hex": [
+        "003C0000",
+        "003F0000",
+        "00233800",
+        "00350000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 12,
+          "lane": 2,
+          "logical_row": 35,
+          "physical_row": 22,
+          "value": 0.5
+        },
+        null
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 14,
+      "lane_words_hex": [
+        "003C0000",
+        "003F0000",
+        "00230000",
+        "00354400"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 14,
+          "lane": 3,
+          "logical_row": 53,
+          "physical_row": 23,
+          "value": 4.0
+        }
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 15,
+      "lane_words_hex": [
+        "003C0000",
+        "003F0000",
+        "0023B800",
+        "00353E00"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 15,
+          "lane": 2,
+          "logical_row": 35,
+          "physical_row": 22,
+          "value": -0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 15,
+          "lane": 3,
+          "logical_row": 53,
+          "physical_row": 23,
+          "value": 1.5
+        }
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 19,
+      "lane_words_hex": [
+        "003C4400",
+        "003F0000",
+        "00230000",
+        "00350000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 19,
+          "lane": 0,
+          "logical_row": 60,
+          "physical_row": 20,
+          "value": 4.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 25,
+      "lane_words_hex": [
+        "003C3E00",
+        "003F3800",
+        "00230000",
+        "00350000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 25,
+          "lane": 0,
+          "logical_row": 60,
+          "physical_row": 20,
+          "value": 1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 25,
+          "lane": 1,
+          "logical_row": 63,
+          "physical_row": 21,
+          "value": 0.5
+        },
+        null,
+        null
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 26,
+      "lane_words_hex": [
+        "003C0000",
+        "003FC000",
+        "00234000",
+        "0035C400"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 26,
+          "lane": 1,
+          "logical_row": 63,
+          "physical_row": 21,
+          "value": -2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 26,
+          "lane": 2,
+          "logical_row": 35,
+          "physical_row": 22,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 26,
+          "lane": 3,
+          "logical_row": 53,
+          "physical_row": 23,
+          "value": -4.0
+        }
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 28,
+      "lane_words_hex": [
+        "003C4400",
+        "003F0000",
+        "00230000",
+        "00350000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 28,
+          "lane": 0,
+          "logical_row": 60,
+          "physical_row": 20,
+          "value": 4.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "000E",
+      "k": 29,
+      "lane_words_hex": [
+        "003C0000",
+        "003FB800",
+        "0023C400",
+        "00353E00"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "B800",
+          "k": 29,
+          "lane": 1,
+          "logical_row": 63,
+          "physical_row": 21,
+          "value": -0.5
+        },
+        {
+          "eor": true,
+          "fp16_hex": "C400",
+          "k": 29,
+          "lane": 2,
+          "logical_row": 35,
+          "physical_row": 22,
+          "value": -4.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "3E00",
+          "k": 29,
+          "lane": 3,
+          "logical_row": 53,
+          "physical_row": 23,
+          "value": 1.5
+        }
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "0001",
+      "k": 30,
+      "lane_words_hex": [
+        "003C4200",
+        "003F0000",
+        "00230000",
+        "00350000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "4200",
+          "k": 30,
+          "lane": 0,
+          "logical_row": 60,
+          "physical_row": 20,
+          "value": 3.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 20,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 0,
+      "lane_words_hex": [
+        "00240000",
+        "00170000",
+        "001C0000",
+        "00104400"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 0,
+          "lane": 3,
+          "logical_row": 16,
+          "physical_row": 27,
+          "value": 4.0
+        }
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 2,
+      "lane_words_hex": [
+        "00240000",
+        "00170000",
+        "001C4000",
+        "00100000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 2,
+          "lane": 2,
+          "logical_row": 28,
+          "physical_row": 26,
+          "value": 2.0
+        },
+        null
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 3,
+      "lane_words_hex": [
+        "00240000",
+        "00174000",
+        "001CB800",
+        "00100000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 3,
+          "lane": 1,
+          "logical_row": 23,
+          "physical_row": 25,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 3,
+          "lane": 2,
+          "logical_row": 28,
+          "physical_row": 26,
+          "value": -0.5
+        },
+        null
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 4,
+      "lane_words_hex": [
+        "00244000",
+        "00173E00",
+        "001C0000",
+        "00100000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 4,
+          "lane": 0,
+          "logical_row": 36,
+          "physical_row": 24,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 4,
+          "lane": 1,
+          "logical_row": 23,
+          "physical_row": 25,
+          "value": 1.5
+        },
+        null,
+        null
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 7,
+      "lane_words_hex": [
+        "00240000",
+        "00170000",
+        "001C0000",
+        "00104200"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 7,
+          "lane": 3,
+          "logical_row": 16,
+          "physical_row": 27,
+          "value": 3.0
+        }
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 8,
+      "lane_words_hex": [
+        "00243800",
+        "00170000",
+        "001C0000",
+        "00100000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 8,
+          "lane": 0,
+          "logical_row": 36,
+          "physical_row": 24,
+          "value": 0.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 9,
+      "lane_words_hex": [
+        "00240000",
+        "0017C200",
+        "001C0000",
+        "00100000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 9,
+          "lane": 1,
+          "logical_row": 23,
+          "physical_row": 25,
+          "value": -3.0
+        },
+        null,
+        null
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 10,
+      "lane_words_hex": [
+        "00240000",
+        "0017BE00",
+        "001C4400",
+        "0010C400"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 10,
+          "lane": 1,
+          "logical_row": 23,
+          "physical_row": 25,
+          "value": -1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 10,
+          "lane": 2,
+          "logical_row": 28,
+          "physical_row": 26,
+          "value": 4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 10,
+          "lane": 3,
+          "logical_row": 16,
+          "physical_row": 27,
+          "value": -4.0
+        }
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 12,
+      "lane_words_hex": [
+        "0024C000",
+        "0017B800",
+        "001CBE00",
+        "0010BC00"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 12,
+          "lane": 0,
+          "logical_row": 36,
+          "physical_row": 24,
+          "value": -2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 12,
+          "lane": 1,
+          "logical_row": 23,
+          "physical_row": 25,
+          "value": -0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 12,
+          "lane": 2,
+          "logical_row": 28,
+          "physical_row": 26,
+          "value": -1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 12,
+          "lane": 3,
+          "logical_row": 16,
+          "physical_row": 27,
+          "value": -1.0
+        }
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "000F"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 14,
+      "lane_words_hex": [
+        "00240000",
+        "00170000",
+        "001C4200",
+        "00100000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 14,
+          "lane": 2,
+          "logical_row": 28,
+          "physical_row": 26,
+          "value": 3.0
+        },
+        null
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 16,
+      "lane_words_hex": [
+        "00240000",
+        "00170000",
+        "001C0000",
+        "00103800"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 16,
+          "lane": 3,
+          "logical_row": 16,
+          "physical_row": 27,
+          "value": 0.5
+        }
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 18,
+      "lane_words_hex": [
+        "0024C000",
+        "0017BC00",
+        "001C0000",
+        "0010BE00"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 18,
+          "lane": 0,
+          "logical_row": 36,
+          "physical_row": 24,
+          "value": -2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 18,
+          "lane": 1,
+          "logical_row": 23,
+          "physical_row": 25,
+          "value": -1.0
+        },
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 18,
+          "lane": 3,
+          "logical_row": 16,
+          "physical_row": 27,
+          "value": -1.5
+        }
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "000B"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 19,
+      "lane_words_hex": [
+        "00240000",
+        "0017C200",
+        "001C3C00",
+        "00100000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 19,
+          "lane": 1,
+          "logical_row": 23,
+          "physical_row": 25,
+          "value": -3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 19,
+          "lane": 2,
+          "logical_row": 28,
+          "physical_row": 26,
+          "value": 1.0
+        },
+        null
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 20,
+      "lane_words_hex": [
+        "00240000",
+        "00170000",
+        "001CBC00",
+        "0010C400"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 20,
+          "lane": 2,
+          "logical_row": 28,
+          "physical_row": 26,
+          "value": -1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 20,
+          "lane": 3,
+          "logical_row": 16,
+          "physical_row": 27,
+          "value": -4.0
+        }
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 21,
+      "lane_words_hex": [
+        "00240000",
+        "00170000",
+        "001C0000",
+        "0010C000"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 21,
+          "lane": 3,
+          "logical_row": 16,
+          "physical_row": 27,
+          "value": -2.0
+        }
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0002",
+      "k": 26,
+      "lane_words_hex": [
+        "00243C00",
+        "00174000",
+        "001C0000",
+        "00100000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 26,
+          "lane": 0,
+          "logical_row": 36,
+          "physical_row": 24,
+          "value": 1.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "4000",
+          "k": 26,
+          "lane": 1,
+          "logical_row": 23,
+          "physical_row": 25,
+          "value": 2.0
+        },
+        null,
+        null
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 27,
+      "lane_words_hex": [
+        "0024C400",
+        "00170000",
+        "001C0000",
+        "00100000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 27,
+          "lane": 0,
+          "logical_row": 36,
+          "physical_row": 24,
+          "value": -4.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0008",
+      "k": 28,
+      "lane_words_hex": [
+        "00240000",
+        "00170000",
+        "001C0000",
+        "00104200"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "4200",
+          "k": 28,
+          "lane": 3,
+          "logical_row": 16,
+          "physical_row": 27,
+          "value": 3.0
+        }
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0004",
+      "k": 29,
+      "lane_words_hex": [
+        "0024C200",
+        "00170000",
+        "001C3E00",
+        "00100000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 29,
+          "lane": 0,
+          "logical_row": 36,
+          "physical_row": 24,
+          "value": -3.0
+        },
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "3E00",
+          "k": 29,
+          "lane": 2,
+          "logical_row": 28,
+          "physical_row": 26,
+          "value": 1.5
+        },
+        null
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0005"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 30,
+      "lane_words_hex": [
+        "00243E00",
+        "00170000",
+        "001C0000",
+        "00100000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 30,
+          "lane": 0,
+          "logical_row": 36,
+          "physical_row": 24,
+          "value": 1.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0001",
+      "k": 31,
+      "lane_words_hex": [
+        "0024BE00",
+        "00170000",
+        "001C0000",
+        "00100000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "BE00",
+          "k": 31,
+          "lane": 0,
+          "logical_row": 36,
+          "physical_row": 24,
+          "value": -1.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 24,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 3,
+      "lane_words_hex": [
+        "00040000",
+        "0020C000",
+        "00134000",
+        "00064400"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 3,
+          "lane": 1,
+          "logical_row": 32,
+          "physical_row": 29,
+          "value": -2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 3,
+          "lane": 2,
+          "logical_row": 19,
+          "physical_row": 30,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 3,
+          "lane": 3,
+          "logical_row": 6,
+          "physical_row": 31,
+          "value": 4.0
+        }
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 4,
+      "lane_words_hex": [
+        "00040000",
+        "0020C000",
+        "00130000",
+        "00060000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 4,
+          "lane": 1,
+          "logical_row": 32,
+          "physical_row": 29,
+          "value": -2.0
+        },
+        null,
+        null
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 5,
+      "lane_words_hex": [
+        "00040000",
+        "00200000",
+        "00130000",
+        "00063E00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 5,
+          "lane": 3,
+          "logical_row": 6,
+          "physical_row": 31,
+          "value": 1.5
+        }
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 7,
+      "lane_words_hex": [
+        "00043800",
+        "00200000",
+        "00130000",
+        "00060000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 7,
+          "lane": 0,
+          "logical_row": 4,
+          "physical_row": 28,
+          "value": 0.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 9,
+      "lane_words_hex": [
+        "00040000",
+        "00200000",
+        "0013C400",
+        "00060000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 9,
+          "lane": 2,
+          "logical_row": 19,
+          "physical_row": 30,
+          "value": -4.0
+        },
+        null
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 10,
+      "lane_words_hex": [
+        "00044200",
+        "0020B800",
+        "00130000",
+        "00060000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 10,
+          "lane": 0,
+          "logical_row": 4,
+          "physical_row": 28,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 10,
+          "lane": 1,
+          "logical_row": 32,
+          "physical_row": 29,
+          "value": -0.5
+        },
+        null,
+        null
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 12,
+      "lane_words_hex": [
+        "00040000",
+        "00200000",
+        "0013C400",
+        "00060000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 12,
+          "lane": 2,
+          "logical_row": 19,
+          "physical_row": 30,
+          "value": -4.0
+        },
+        null
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 14,
+      "lane_words_hex": [
+        "00040000",
+        "00200000",
+        "00130000",
+        "00063800"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 14,
+          "lane": 3,
+          "logical_row": 6,
+          "physical_row": 31,
+          "value": 0.5
+        }
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 15,
+      "lane_words_hex": [
+        "00040000",
+        "00200000",
+        "0013B800",
+        "00060000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 15,
+          "lane": 2,
+          "logical_row": 19,
+          "physical_row": 30,
+          "value": -0.5
+        },
+        null
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 16,
+      "lane_words_hex": [
+        "00044000",
+        "0020C000",
+        "0013C000",
+        "00063C00"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 16,
+          "lane": 0,
+          "logical_row": 4,
+          "physical_row": 28,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 16,
+          "lane": 1,
+          "logical_row": 32,
+          "physical_row": 29,
+          "value": -2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 16,
+          "lane": 2,
+          "logical_row": 19,
+          "physical_row": 30,
+          "value": -2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 16,
+          "lane": 3,
+          "logical_row": 6,
+          "physical_row": 31,
+          "value": 1.0
+        }
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "000F"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 21,
+      "lane_words_hex": [
+        "00040000",
+        "00200000",
+        "00133800",
+        "0006B800"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 21,
+          "lane": 2,
+          "logical_row": 19,
+          "physical_row": 30,
+          "value": 0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 21,
+          "lane": 3,
+          "logical_row": 6,
+          "physical_row": 31,
+          "value": -0.5
+        }
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 22,
+      "lane_words_hex": [
+        "0004BC00",
+        "00200000",
+        "00130000",
+        "00060000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 22,
+          "lane": 0,
+          "logical_row": 4,
+          "physical_row": 28,
+          "value": -1.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 23,
+      "lane_words_hex": [
+        "00043E00",
+        "00200000",
+        "00130000",
+        "00060000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 23,
+          "lane": 0,
+          "logical_row": 4,
+          "physical_row": 28,
+          "value": 1.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 24,
+      "lane_words_hex": [
+        "00040000",
+        "0020C000",
+        "00130000",
+        "0006C400"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 24,
+          "lane": 1,
+          "logical_row": 32,
+          "physical_row": 29,
+          "value": -2.0
+        },
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 24,
+          "lane": 3,
+          "logical_row": 6,
+          "physical_row": 31,
+          "value": -4.0
+        }
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "000A"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 27,
+      "lane_words_hex": [
+        "00040000",
+        "00203E00",
+        "00130000",
+        "00060000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 27,
+          "lane": 1,
+          "logical_row": 32,
+          "physical_row": 29,
+          "value": 1.5
+        },
+        null,
+        null
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 28,
+      "lane_words_hex": [
+        "0004BE00",
+        "00200000",
+        "00130000",
+        "00060000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 28,
+          "lane": 0,
+          "logical_row": 4,
+          "physical_row": 28,
+          "value": -1.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0001",
+      "k": 30,
+      "lane_words_hex": [
+        "0004BC00",
+        "0020C200",
+        "0013BE00",
+        "00060000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "BC00",
+          "k": 30,
+          "lane": 0,
+          "logical_row": 4,
+          "physical_row": 28,
+          "value": -1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 30,
+          "lane": 1,
+          "logical_row": 32,
+          "physical_row": 29,
+          "value": -3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 30,
+          "lane": 2,
+          "logical_row": 19,
+          "physical_row": 30,
+          "value": -1.5
+        },
+        null
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "0007"
+    },
+    {
+      "eor_mask_hex": "000E",
+      "k": 31,
+      "lane_words_hex": [
+        "00040000",
+        "00204200",
+        "0013BC00",
+        "00063C00"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "4200",
+          "k": 31,
+          "lane": 1,
+          "logical_row": 32,
+          "physical_row": 29,
+          "value": 3.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "BC00",
+          "k": 31,
+          "lane": 2,
+          "logical_row": 19,
+          "physical_row": 30,
+          "value": -1.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "3C00",
+          "k": 31,
+          "lane": 3,
+          "logical_row": 6,
+          "physical_row": 31,
+          "value": 1.0
+        }
+      ],
+      "row_base": 28,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 1,
+      "lane_words_hex": [
+        "003D0000",
+        "00270000",
+        "000F0000",
+        "00294400"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 1,
+          "lane": 3,
+          "logical_row": 41,
+          "physical_row": 35,
+          "value": 4.0
+        }
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 2,
+      "lane_words_hex": [
+        "003D0000",
+        "00270000",
+        "000F4200",
+        "00290000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 2,
+          "lane": 2,
+          "logical_row": 15,
+          "physical_row": 34,
+          "value": 3.0
+        },
+        null
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 3,
+      "lane_words_hex": [
+        "003D3C00",
+        "00270000",
+        "000F0000",
+        "00290000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 3,
+          "lane": 0,
+          "logical_row": 61,
+          "physical_row": 32,
+          "value": 1.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 5,
+      "lane_words_hex": [
+        "003DC000",
+        "0027C200",
+        "000F3E00",
+        "00294200"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 5,
+          "lane": 0,
+          "logical_row": 61,
+          "physical_row": 32,
+          "value": -2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 5,
+          "lane": 1,
+          "logical_row": 39,
+          "physical_row": 33,
+          "value": -3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 5,
+          "lane": 2,
+          "logical_row": 15,
+          "physical_row": 34,
+          "value": 1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 5,
+          "lane": 3,
+          "logical_row": 41,
+          "physical_row": 35,
+          "value": 3.0
+        }
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "000F"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 8,
+      "lane_words_hex": [
+        "003DBE00",
+        "00270000",
+        "000F0000",
+        "00290000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 8,
+          "lane": 0,
+          "logical_row": 61,
+          "physical_row": 32,
+          "value": -1.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 14,
+      "lane_words_hex": [
+        "003D0000",
+        "00273800",
+        "000FBE00",
+        "00290000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 14,
+          "lane": 1,
+          "logical_row": 39,
+          "physical_row": 33,
+          "value": 0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 14,
+          "lane": 2,
+          "logical_row": 15,
+          "physical_row": 34,
+          "value": -1.5
+        },
+        null
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 16,
+      "lane_words_hex": [
+        "003D0000",
+        "00270000",
+        "000F4400",
+        "0029C200"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 16,
+          "lane": 2,
+          "logical_row": 15,
+          "physical_row": 34,
+          "value": 4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 16,
+          "lane": 3,
+          "logical_row": 41,
+          "physical_row": 35,
+          "value": -3.0
+        }
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 17,
+      "lane_words_hex": [
+        "003D0000",
+        "00270000",
+        "000F0000",
+        "0029C200"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 17,
+          "lane": 3,
+          "logical_row": 41,
+          "physical_row": 35,
+          "value": -3.0
+        }
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 19,
+      "lane_words_hex": [
+        "003D3C00",
+        "0027C000",
+        "000F0000",
+        "00290000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 19,
+          "lane": 0,
+          "logical_row": 61,
+          "physical_row": 32,
+          "value": 1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 19,
+          "lane": 1,
+          "logical_row": 39,
+          "physical_row": 33,
+          "value": -2.0
+        },
+        null,
+        null
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 21,
+      "lane_words_hex": [
+        "003DC200",
+        "00270000",
+        "000F0000",
+        "00290000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 21,
+          "lane": 0,
+          "logical_row": 61,
+          "physical_row": 32,
+          "value": -3.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 22,
+      "lane_words_hex": [
+        "003D3800",
+        "00274000",
+        "000F4200",
+        "00290000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 22,
+          "lane": 0,
+          "logical_row": 61,
+          "physical_row": 32,
+          "value": 0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 22,
+          "lane": 1,
+          "logical_row": 39,
+          "physical_row": 33,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 22,
+          "lane": 2,
+          "logical_row": 15,
+          "physical_row": 34,
+          "value": 3.0
+        },
+        null
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "0007"
+    },
+    {
+      "eor_mask_hex": "0004",
+      "k": 23,
+      "lane_words_hex": [
+        "003D0000",
+        "0027C200",
+        "000F3800",
+        "0029BC00"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 23,
+          "lane": 1,
+          "logical_row": 39,
+          "physical_row": 33,
+          "value": -3.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "3800",
+          "k": 23,
+          "lane": 2,
+          "logical_row": 15,
+          "physical_row": 34,
+          "value": 0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 23,
+          "lane": 3,
+          "logical_row": 41,
+          "physical_row": 35,
+          "value": -1.0
+        }
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 24,
+      "lane_words_hex": [
+        "003D0000",
+        "00270000",
+        "000F0000",
+        "00293E00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 24,
+          "lane": 3,
+          "logical_row": 41,
+          "physical_row": 35,
+          "value": 1.5
+        }
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 26,
+      "lane_words_hex": [
+        "003D3800",
+        "00270000",
+        "000F0000",
+        "00290000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 26,
+          "lane": 0,
+          "logical_row": 61,
+          "physical_row": 32,
+          "value": 0.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0008",
+      "k": 27,
+      "lane_words_hex": [
+        "003D0000",
+        "00270000",
+        "000F0000",
+        "0029BC00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "BC00",
+          "k": 27,
+          "lane": 3,
+          "logical_row": 41,
+          "physical_row": 35,
+          "value": -1.0
+        }
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 29,
+      "lane_words_hex": [
+        "003D0000",
+        "00273E00",
+        "000F0000",
+        "00290000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 29,
+          "lane": 1,
+          "logical_row": 39,
+          "physical_row": 33,
+          "value": 1.5
+        },
+        null,
+        null
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0003",
+      "k": 31,
+      "lane_words_hex": [
+        "003DBE00",
+        "00274000",
+        "000F0000",
+        "00290000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "BE00",
+          "k": 31,
+          "lane": 0,
+          "logical_row": 61,
+          "physical_row": 32,
+          "value": -1.5
+        },
+        {
+          "eor": true,
+          "fp16_hex": "4000",
+          "k": 31,
+          "lane": 1,
+          "logical_row": 39,
+          "physical_row": 33,
+          "value": 2.0
+        },
+        null,
+        null
+      ],
+      "row_base": 32,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 1,
+      "lane_words_hex": [
+        "00263E00",
+        "00370000",
+        "00320000",
+        "00210000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 1,
+          "lane": 0,
+          "logical_row": 38,
+          "physical_row": 36,
+          "value": 1.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 2,
+      "lane_words_hex": [
+        "0026BE00",
+        "00373E00",
+        "00320000",
+        "00210000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 2,
+          "lane": 0,
+          "logical_row": 38,
+          "physical_row": 36,
+          "value": -1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 2,
+          "lane": 1,
+          "logical_row": 55,
+          "physical_row": 37,
+          "value": 1.5
+        },
+        null,
+        null
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 4,
+      "lane_words_hex": [
+        "00260000",
+        "00370000",
+        "00320000",
+        "00214000"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 4,
+          "lane": 3,
+          "logical_row": 33,
+          "physical_row": 39,
+          "value": 2.0
+        }
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 6,
+      "lane_words_hex": [
+        "00260000",
+        "00373E00",
+        "00323800",
+        "0021BE00"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 6,
+          "lane": 1,
+          "logical_row": 55,
+          "physical_row": 37,
+          "value": 1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 6,
+          "lane": 2,
+          "logical_row": 50,
+          "physical_row": 38,
+          "value": 0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 6,
+          "lane": 3,
+          "logical_row": 33,
+          "physical_row": 39,
+          "value": -1.5
+        }
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 7,
+      "lane_words_hex": [
+        "0026C000",
+        "00374200",
+        "00320000",
+        "00210000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 7,
+          "lane": 0,
+          "logical_row": 38,
+          "physical_row": 36,
+          "value": -2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 7,
+          "lane": 1,
+          "logical_row": 55,
+          "physical_row": 37,
+          "value": 3.0
+        },
+        null,
+        null
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 8,
+      "lane_words_hex": [
+        "00260000",
+        "00373C00",
+        "00320000",
+        "00210000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 8,
+          "lane": 1,
+          "logical_row": 55,
+          "physical_row": 37,
+          "value": 1.0
+        },
+        null,
+        null
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 9,
+      "lane_words_hex": [
+        "00260000",
+        "00370000",
+        "00320000",
+        "0021B800"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 9,
+          "lane": 3,
+          "logical_row": 33,
+          "physical_row": 39,
+          "value": -0.5
+        }
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 10,
+      "lane_words_hex": [
+        "00260000",
+        "0037B800",
+        "00323E00",
+        "00210000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 10,
+          "lane": 1,
+          "logical_row": 55,
+          "physical_row": 37,
+          "value": -0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 10,
+          "lane": 2,
+          "logical_row": 50,
+          "physical_row": 38,
+          "value": 1.5
+        },
+        null
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 11,
+      "lane_words_hex": [
+        "00260000",
+        "00370000",
+        "00323800",
+        "00210000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 11,
+          "lane": 2,
+          "logical_row": 50,
+          "physical_row": 38,
+          "value": 0.5
+        },
+        null
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 13,
+      "lane_words_hex": [
+        "00260000",
+        "0037C200",
+        "00320000",
+        "00210000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 13,
+          "lane": 1,
+          "logical_row": 55,
+          "physical_row": 37,
+          "value": -3.0
+        },
+        null,
+        null
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 14,
+      "lane_words_hex": [
+        "00260000",
+        "00370000",
+        "0032C400",
+        "00210000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 14,
+          "lane": 2,
+          "logical_row": 50,
+          "physical_row": 38,
+          "value": -4.0
+        },
+        null
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0002",
+      "k": 16,
+      "lane_words_hex": [
+        "0026BC00",
+        "00374400",
+        "00324000",
+        "00213E00"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 16,
+          "lane": 0,
+          "logical_row": 38,
+          "physical_row": 36,
+          "value": -1.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "4400",
+          "k": 16,
+          "lane": 1,
+          "logical_row": 55,
+          "physical_row": 37,
+          "value": 4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 16,
+          "lane": 2,
+          "logical_row": 50,
+          "physical_row": 38,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 16,
+          "lane": 3,
+          "logical_row": 33,
+          "physical_row": 39,
+          "value": 1.5
+        }
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "000F"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 17,
+      "lane_words_hex": [
+        "00264200",
+        "00370000",
+        "00320000",
+        "00210000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 17,
+          "lane": 0,
+          "logical_row": 38,
+          "physical_row": 36,
+          "value": 3.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 19,
+      "lane_words_hex": [
+        "00260000",
+        "00370000",
+        "00324200",
+        "0021C400"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 19,
+          "lane": 2,
+          "logical_row": 50,
+          "physical_row": 38,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 19,
+          "lane": 3,
+          "logical_row": 33,
+          "physical_row": 39,
+          "value": -4.0
+        }
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 20,
+      "lane_words_hex": [
+        "0026B800",
+        "00370000",
+        "00320000",
+        "00210000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 20,
+          "lane": 0,
+          "logical_row": 38,
+          "physical_row": 36,
+          "value": -0.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0004",
+      "k": 21,
+      "lane_words_hex": [
+        "00260000",
+        "00370000",
+        "00323800",
+        "00210000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "3800",
+          "k": 21,
+          "lane": 2,
+          "logical_row": 50,
+          "physical_row": 38,
+          "value": 0.5
+        },
+        null
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 22,
+      "lane_words_hex": [
+        "00260000",
+        "00370000",
+        "00320000",
+        "0021C000"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 22,
+          "lane": 3,
+          "logical_row": 33,
+          "physical_row": 39,
+          "value": -2.0
+        }
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0001",
+      "k": 24,
+      "lane_words_hex": [
+        "0026BC00",
+        "00370000",
+        "00320000",
+        "00210000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "BC00",
+          "k": 24,
+          "lane": 0,
+          "logical_row": 38,
+          "physical_row": 36,
+          "value": -1.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0008",
+      "k": 26,
+      "lane_words_hex": [
+        "00260000",
+        "00370000",
+        "00320000",
+        "00214400"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "4400",
+          "k": 26,
+          "lane": 3,
+          "logical_row": 33,
+          "physical_row": 39,
+          "value": 4.0
+        }
+      ],
+      "row_base": 36,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 0,
+      "lane_words_hex": [
+        "002D0000",
+        "002CC400",
+        "00280000",
+        "003B0000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 0,
+          "lane": 1,
+          "logical_row": 44,
+          "physical_row": 41,
+          "value": -4.0
+        },
+        null,
+        null
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 3,
+      "lane_words_hex": [
+        "002D0000",
+        "002C0000",
+        "00280000",
+        "003BBE00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 3,
+          "lane": 3,
+          "logical_row": 59,
+          "physical_row": 43,
+          "value": -1.5
+        }
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 4,
+      "lane_words_hex": [
+        "002DBC00",
+        "002C0000",
+        "00280000",
+        "003B0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 4,
+          "lane": 0,
+          "logical_row": 45,
+          "physical_row": 40,
+          "value": -1.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 5,
+      "lane_words_hex": [
+        "002DBC00",
+        "002C0000",
+        "00280000",
+        "003B0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 5,
+          "lane": 0,
+          "logical_row": 45,
+          "physical_row": 40,
+          "value": -1.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 6,
+      "lane_words_hex": [
+        "002DBC00",
+        "002C4200",
+        "00284200",
+        "003BB800"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 6,
+          "lane": 0,
+          "logical_row": 45,
+          "physical_row": 40,
+          "value": -1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 6,
+          "lane": 1,
+          "logical_row": 44,
+          "physical_row": 41,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 6,
+          "lane": 2,
+          "logical_row": 40,
+          "physical_row": 42,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 6,
+          "lane": 3,
+          "logical_row": 59,
+          "physical_row": 43,
+          "value": -0.5
+        }
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "000F"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 7,
+      "lane_words_hex": [
+        "002D0000",
+        "002C0000",
+        "00280000",
+        "003BC200"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 7,
+          "lane": 3,
+          "logical_row": 59,
+          "physical_row": 43,
+          "value": -3.0
+        }
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 9,
+      "lane_words_hex": [
+        "002D4000",
+        "002C0000",
+        "00280000",
+        "003B4200"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 9,
+          "lane": 0,
+          "logical_row": 45,
+          "physical_row": 40,
+          "value": 2.0
+        },
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 9,
+          "lane": 3,
+          "logical_row": 59,
+          "physical_row": 43,
+          "value": 3.0
+        }
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "0009"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 12,
+      "lane_words_hex": [
+        "002D0000",
+        "002C0000",
+        "00280000",
+        "003BC200"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 12,
+          "lane": 3,
+          "logical_row": 59,
+          "physical_row": 43,
+          "value": -3.0
+        }
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 13,
+      "lane_words_hex": [
+        "002D0000",
+        "002C0000",
+        "00283C00",
+        "003B0000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 13,
+          "lane": 2,
+          "logical_row": 40,
+          "physical_row": 42,
+          "value": 1.0
+        },
+        null
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 16,
+      "lane_words_hex": [
+        "002DBE00",
+        "002C4000",
+        "0028C400",
+        "003B0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 16,
+          "lane": 0,
+          "logical_row": 45,
+          "physical_row": 40,
+          "value": -1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 16,
+          "lane": 1,
+          "logical_row": 44,
+          "physical_row": 41,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 16,
+          "lane": 2,
+          "logical_row": 40,
+          "physical_row": 42,
+          "value": -4.0
+        },
+        null
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "0007"
+    },
+    {
+      "eor_mask_hex": "0001",
+      "k": 17,
+      "lane_words_hex": [
+        "002D4200",
+        "002CC400",
+        "00280000",
+        "003B0000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "4200",
+          "k": 17,
+          "lane": 0,
+          "logical_row": 45,
+          "physical_row": 40,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 17,
+          "lane": 1,
+          "logical_row": 44,
+          "physical_row": 41,
+          "value": -4.0
+        },
+        null,
+        null
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 18,
+      "lane_words_hex": [
+        "002D0000",
+        "002C0000",
+        "00283800",
+        "003B0000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 18,
+          "lane": 2,
+          "logical_row": 40,
+          "physical_row": 42,
+          "value": 0.5
+        },
+        null
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 22,
+      "lane_words_hex": [
+        "002D0000",
+        "002C0000",
+        "00280000",
+        "003B3800"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 22,
+          "lane": 3,
+          "logical_row": 59,
+          "physical_row": 43,
+          "value": 0.5
+        }
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 23,
+      "lane_words_hex": [
+        "002D0000",
+        "002C4000",
+        "00284400",
+        "003B4400"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 23,
+          "lane": 1,
+          "logical_row": 44,
+          "physical_row": 41,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 23,
+          "lane": 2,
+          "logical_row": 40,
+          "physical_row": 42,
+          "value": 4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 23,
+          "lane": 3,
+          "logical_row": 59,
+          "physical_row": 43,
+          "value": 4.0
+        }
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "000E",
+      "k": 24,
+      "lane_words_hex": [
+        "002D0000",
+        "002C3C00",
+        "00284200",
+        "003BBC00"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "3C00",
+          "k": 24,
+          "lane": 1,
+          "logical_row": 44,
+          "physical_row": 41,
+          "value": 1.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "4200",
+          "k": 24,
+          "lane": 2,
+          "logical_row": 40,
+          "physical_row": 42,
+          "value": 3.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "BC00",
+          "k": 24,
+          "lane": 3,
+          "logical_row": 59,
+          "physical_row": 43,
+          "value": -1.0
+        }
+      ],
+      "row_base": 40,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 0,
+      "lane_words_hex": [
+        "00180000",
+        "00000000",
+        "002A0000",
+        "00014000"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 0,
+          "lane": 3,
+          "logical_row": 1,
+          "physical_row": 47,
+          "value": 2.0
+        }
+      ],
+      "row_base": 44,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 1,
+      "lane_words_hex": [
+        "00183800",
+        "00000000",
+        "002A0000",
+        "00010000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 1,
+          "lane": 0,
+          "logical_row": 24,
+          "physical_row": 44,
+          "value": 0.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 44,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 3,
+      "lane_words_hex": [
+        "0018C400",
+        "00003800",
+        "002A0000",
+        "00010000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 3,
+          "lane": 0,
+          "logical_row": 24,
+          "physical_row": 44,
+          "value": -4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 3,
+          "lane": 1,
+          "logical_row": 0,
+          "physical_row": 45,
+          "value": 0.5
+        },
+        null,
+        null
+      ],
+      "row_base": 44,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 4,
+      "lane_words_hex": [
+        "00180000",
+        "00003C00",
+        "002A0000",
+        "00010000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 4,
+          "lane": 1,
+          "logical_row": 0,
+          "physical_row": 45,
+          "value": 1.0
+        },
+        null,
+        null
+      ],
+      "row_base": 44,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 5,
+      "lane_words_hex": [
+        "00180000",
+        "00000000",
+        "002A3800",
+        "00010000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 5,
+          "lane": 2,
+          "logical_row": 42,
+          "physical_row": 46,
+          "value": 0.5
+        },
+        null
+      ],
+      "row_base": 44,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 7,
+      "lane_words_hex": [
+        "0018BC00",
+        "00000000",
+        "002A0000",
+        "00010000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 7,
+          "lane": 0,
+          "logical_row": 24,
+          "physical_row": 44,
+          "value": -1.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 44,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 8,
+      "lane_words_hex": [
+        "00184200",
+        "00004200",
+        "002A3800",
+        "00010000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 8,
+          "lane": 0,
+          "logical_row": 24,
+          "physical_row": 44,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 8,
+          "lane": 1,
+          "logical_row": 0,
+          "physical_row": 45,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 8,
+          "lane": 2,
+          "logical_row": 42,
+          "physical_row": 46,
+          "value": 0.5
+        },
+        null
+      ],
+      "row_base": 44,
+      "valid_mask_hex": "0007"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 14,
+      "lane_words_hex": [
+        "0018C400",
+        "00003C00",
+        "002A0000",
+        "00010000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 14,
+          "lane": 0,
+          "logical_row": 24,
+          "physical_row": 44,
+          "value": -4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 14,
+          "lane": 1,
+          "logical_row": 0,
+          "physical_row": 45,
+          "value": 1.0
+        },
+        null,
+        null
+      ],
+      "row_base": 44,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 15,
+      "lane_words_hex": [
+        "00180000",
+        "0000BE00",
+        "002AB800",
+        "00010000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 15,
+          "lane": 1,
+          "logical_row": 0,
+          "physical_row": 45,
+          "value": -1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 15,
+          "lane": 2,
+          "logical_row": 42,
+          "physical_row": 46,
+          "value": -0.5
+        },
+        null
+      ],
+      "row_base": 44,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 17,
+      "lane_words_hex": [
+        "00180000",
+        "00000000",
+        "002A0000",
+        "0001B800"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 17,
+          "lane": 3,
+          "logical_row": 1,
+          "physical_row": 47,
+          "value": -0.5
+        }
+      ],
+      "row_base": 44,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0002",
+      "k": 24,
+      "lane_words_hex": [
+        "00180000",
+        "0000C200",
+        "002A3C00",
+        "00014400"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "C200",
+          "k": 24,
+          "lane": 1,
+          "logical_row": 0,
+          "physical_row": 45,
+          "value": -3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 24,
+          "lane": 2,
+          "logical_row": 42,
+          "physical_row": 46,
+          "value": 1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 24,
+          "lane": 3,
+          "logical_row": 1,
+          "physical_row": 47,
+          "value": 4.0
+        }
+      ],
+      "row_base": 44,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 25,
+      "lane_words_hex": [
+        "0018C200",
+        "00000000",
+        "002A0000",
+        "00010000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 25,
+          "lane": 0,
+          "logical_row": 24,
+          "physical_row": 44,
+          "value": -3.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 44,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 27,
+      "lane_words_hex": [
+        "00180000",
+        "00000000",
+        "002A0000",
+        "0001BE00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 27,
+          "lane": 3,
+          "logical_row": 1,
+          "physical_row": 47,
+          "value": -1.5
+        }
+      ],
+      "row_base": 44,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "000D",
+      "k": 28,
+      "lane_words_hex": [
+        "00184000",
+        "00000000",
+        "002AC000",
+        "0001C200"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "4000",
+          "k": 28,
+          "lane": 0,
+          "logical_row": 24,
+          "physical_row": 44,
+          "value": 2.0
+        },
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "C000",
+          "k": 28,
+          "lane": 2,
+          "logical_row": 42,
+          "physical_row": 46,
+          "value": -2.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "C200",
+          "k": 28,
+          "lane": 3,
+          "logical_row": 1,
+          "physical_row": 47,
+          "value": -3.0
+        }
+      ],
+      "row_base": 44,
+      "valid_mask_hex": "000D"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 1,
+      "lane_words_hex": [
+        "000B0000",
+        "0009BE00",
+        "001EB800",
+        "000D0000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 1,
+          "lane": 1,
+          "logical_row": 9,
+          "physical_row": 49,
+          "value": -1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 1,
+          "lane": 2,
+          "logical_row": 30,
+          "physical_row": 50,
+          "value": -0.5
+        },
+        null
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 2,
+      "lane_words_hex": [
+        "000B4200",
+        "00090000",
+        "001E0000",
+        "000D0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 2,
+          "lane": 0,
+          "logical_row": 11,
+          "physical_row": 48,
+          "value": 3.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 5,
+      "lane_words_hex": [
+        "000B0000",
+        "00090000",
+        "001E3E00",
+        "000D0000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 5,
+          "lane": 2,
+          "logical_row": 30,
+          "physical_row": 50,
+          "value": 1.5
+        },
+        null
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 9,
+      "lane_words_hex": [
+        "000B0000",
+        "00090000",
+        "001EBE00",
+        "000DC200"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 9,
+          "lane": 2,
+          "logical_row": 30,
+          "physical_row": 50,
+          "value": -1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 9,
+          "lane": 3,
+          "logical_row": 13,
+          "physical_row": 51,
+          "value": -3.0
+        }
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 10,
+      "lane_words_hex": [
+        "000B0000",
+        "00090000",
+        "001EC200",
+        "000D0000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 10,
+          "lane": 2,
+          "logical_row": 30,
+          "physical_row": 50,
+          "value": -3.0
+        },
+        null
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 11,
+      "lane_words_hex": [
+        "000BBC00",
+        "00093C00",
+        "001E0000",
+        "000D0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 11,
+          "lane": 0,
+          "logical_row": 11,
+          "physical_row": 48,
+          "value": -1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 11,
+          "lane": 1,
+          "logical_row": 9,
+          "physical_row": 49,
+          "value": 1.0
+        },
+        null,
+        null
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 12,
+      "lane_words_hex": [
+        "000B0000",
+        "00090000",
+        "001EBC00",
+        "000D0000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 12,
+          "lane": 2,
+          "logical_row": 30,
+          "physical_row": 50,
+          "value": -1.0
+        },
+        null
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 14,
+      "lane_words_hex": [
+        "000B0000",
+        "00090000",
+        "001E4000",
+        "000DC400"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 14,
+          "lane": 2,
+          "logical_row": 30,
+          "physical_row": 50,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 14,
+          "lane": 3,
+          "logical_row": 13,
+          "physical_row": 51,
+          "value": -4.0
+        }
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 15,
+      "lane_words_hex": [
+        "000B0000",
+        "00093E00",
+        "001E0000",
+        "000D0000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 15,
+          "lane": 1,
+          "logical_row": 9,
+          "physical_row": 49,
+          "value": 1.5
+        },
+        null,
+        null
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 17,
+      "lane_words_hex": [
+        "000BC200",
+        "00090000",
+        "001E0000",
+        "000DB800"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 17,
+          "lane": 0,
+          "logical_row": 11,
+          "physical_row": 48,
+          "value": -3.0
+        },
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 17,
+          "lane": 3,
+          "logical_row": 13,
+          "physical_row": 51,
+          "value": -0.5
+        }
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0009"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 20,
+      "lane_words_hex": [
+        "000B0000",
+        "00090000",
+        "001E0000",
+        "000D3C00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 20,
+          "lane": 3,
+          "logical_row": 13,
+          "physical_row": 51,
+          "value": 1.0
+        }
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 22,
+      "lane_words_hex": [
+        "000B0000",
+        "00090000",
+        "001E0000",
+        "000D3C00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 22,
+          "lane": 3,
+          "logical_row": 13,
+          "physical_row": 51,
+          "value": 1.0
+        }
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 25,
+      "lane_words_hex": [
+        "000BC200",
+        "00090000",
+        "001E0000",
+        "000D0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 25,
+          "lane": 0,
+          "logical_row": 11,
+          "physical_row": 48,
+          "value": -3.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0004",
+      "k": 27,
+      "lane_words_hex": [
+        "000BC400",
+        "00094000",
+        "001E4000",
+        "000D0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 27,
+          "lane": 0,
+          "logical_row": 11,
+          "physical_row": 48,
+          "value": -4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 27,
+          "lane": 1,
+          "logical_row": 9,
+          "physical_row": 49,
+          "value": 2.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "4000",
+          "k": 27,
+          "lane": 2,
+          "logical_row": 30,
+          "physical_row": 50,
+          "value": 2.0
+        },
+        null
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0007"
+    },
+    {
+      "eor_mask_hex": "0001",
+      "k": 28,
+      "lane_words_hex": [
+        "000BC400",
+        "00090000",
+        "001E0000",
+        "000D0000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "C400",
+          "k": 28,
+          "lane": 0,
+          "logical_row": 11,
+          "physical_row": 48,
+          "value": -4.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0008",
+      "k": 29,
+      "lane_words_hex": [
+        "000B0000",
+        "00090000",
+        "001E0000",
+        "000DBC00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "BC00",
+          "k": 29,
+          "lane": 3,
+          "logical_row": 13,
+          "physical_row": 51,
+          "value": -1.0
+        }
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 30,
+      "lane_words_hex": [
+        "000B0000",
+        "00093E00",
+        "001E0000",
+        "000D0000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 30,
+          "lane": 1,
+          "logical_row": 9,
+          "physical_row": 49,
+          "value": 1.5
+        },
+        null,
+        null
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0002",
+      "k": 31,
+      "lane_words_hex": [
+        "000B0000",
+        "00093800",
+        "001E0000",
+        "000D0000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "3800",
+          "k": 31,
+          "lane": 1,
+          "logical_row": 9,
+          "physical_row": 49,
+          "value": 0.5
+        },
+        null,
+        null
+      ],
+      "row_base": 48,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 2,
+      "lane_words_hex": [
+        "003E0000",
+        "0019C200",
+        "00250000",
+        "003A0000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 2,
+          "lane": 1,
+          "logical_row": 25,
+          "physical_row": 53,
+          "value": -3.0
+        },
+        null,
+        null
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 4,
+      "lane_words_hex": [
+        "003E0000",
+        "00190000",
+        "00250000",
+        "003AC000"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 4,
+          "lane": 3,
+          "logical_row": 58,
+          "physical_row": 55,
+          "value": -2.0
+        }
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 7,
+      "lane_words_hex": [
+        "003E0000",
+        "00190000",
+        "00254400",
+        "003A0000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 7,
+          "lane": 2,
+          "logical_row": 37,
+          "physical_row": 54,
+          "value": 4.0
+        },
+        null
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 9,
+      "lane_words_hex": [
+        "003E3C00",
+        "00190000",
+        "00250000",
+        "003A0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 9,
+          "lane": 0,
+          "logical_row": 62,
+          "physical_row": 52,
+          "value": 1.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 10,
+      "lane_words_hex": [
+        "003E0000",
+        "0019BE00",
+        "00250000",
+        "003A0000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 10,
+          "lane": 1,
+          "logical_row": 25,
+          "physical_row": 53,
+          "value": -1.5
+        },
+        null,
+        null
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 12,
+      "lane_words_hex": [
+        "003E0000",
+        "00193C00",
+        "00250000",
+        "003A0000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 12,
+          "lane": 1,
+          "logical_row": 25,
+          "physical_row": 53,
+          "value": 1.0
+        },
+        null,
+        null
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 14,
+      "lane_words_hex": [
+        "003E4400",
+        "00190000",
+        "00250000",
+        "003A0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 14,
+          "lane": 0,
+          "logical_row": 62,
+          "physical_row": 52,
+          "value": 4.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 15,
+      "lane_words_hex": [
+        "003E3800",
+        "0019C000",
+        "00250000",
+        "003A0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 15,
+          "lane": 0,
+          "logical_row": 62,
+          "physical_row": 52,
+          "value": 0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 15,
+          "lane": 1,
+          "logical_row": 25,
+          "physical_row": 53,
+          "value": -2.0
+        },
+        null,
+        null
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 17,
+      "lane_words_hex": [
+        "003EBC00",
+        "00190000",
+        "00250000",
+        "003A0000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 17,
+          "lane": 0,
+          "logical_row": 62,
+          "physical_row": 52,
+          "value": -1.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 18,
+      "lane_words_hex": [
+        "003EB800",
+        "00190000",
+        "00250000",
+        "003A3C00"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 18,
+          "lane": 0,
+          "logical_row": 62,
+          "physical_row": 52,
+          "value": -0.5
+        },
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 18,
+          "lane": 3,
+          "logical_row": 58,
+          "physical_row": 55,
+          "value": 1.0
+        }
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "0009"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 19,
+      "lane_words_hex": [
+        "003E0000",
+        "00190000",
+        "00250000",
+        "003AC000"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 19,
+          "lane": 3,
+          "logical_row": 58,
+          "physical_row": 55,
+          "value": -2.0
+        }
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 20,
+      "lane_words_hex": [
+        "003E0000",
+        "00190000",
+        "00253C00",
+        "003A0000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 20,
+          "lane": 2,
+          "logical_row": 37,
+          "physical_row": 54,
+          "value": 1.0
+        },
+        null
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 21,
+      "lane_words_hex": [
+        "003E0000",
+        "00190000",
+        "00254200",
+        "003A0000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 21,
+          "lane": 2,
+          "logical_row": 37,
+          "physical_row": 54,
+          "value": 3.0
+        },
+        null
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 23,
+      "lane_words_hex": [
+        "003E0000",
+        "00190000",
+        "0025BE00",
+        "003AC000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 23,
+          "lane": 2,
+          "logical_row": 37,
+          "physical_row": 54,
+          "value": -1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 23,
+          "lane": 3,
+          "logical_row": 58,
+          "physical_row": 55,
+          "value": -2.0
+        }
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0003",
+      "k": 26,
+      "lane_words_hex": [
+        "003EBE00",
+        "00194200",
+        "00253800",
+        "003A0000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "BE00",
+          "k": 26,
+          "lane": 0,
+          "logical_row": 62,
+          "physical_row": 52,
+          "value": -1.5
+        },
+        {
+          "eor": true,
+          "fp16_hex": "4200",
+          "k": 26,
+          "lane": 1,
+          "logical_row": 25,
+          "physical_row": 53,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 26,
+          "lane": 2,
+          "logical_row": 37,
+          "physical_row": 54,
+          "value": 0.5
+        },
+        null
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "0007"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 28,
+      "lane_words_hex": [
+        "003E0000",
+        "00190000",
+        "0025B800",
+        "003ABC00"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 28,
+          "lane": 2,
+          "logical_row": 37,
+          "physical_row": 54,
+          "value": -0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 28,
+          "lane": 3,
+          "logical_row": 58,
+          "physical_row": 55,
+          "value": -1.0
+        }
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "000C",
+      "k": 29,
+      "lane_words_hex": [
+        "003E0000",
+        "00190000",
+        "00253C00",
+        "003A3E00"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "3C00",
+          "k": 29,
+          "lane": 2,
+          "logical_row": 37,
+          "physical_row": 54,
+          "value": 1.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "3E00",
+          "k": 29,
+          "lane": 3,
+          "logical_row": 58,
+          "physical_row": 55,
+          "value": 1.5
+        }
+      ],
+      "row_base": 52,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 0,
+      "lane_words_hex": [
+        "002F0000",
+        "00150000",
+        "001B3C00",
+        "0002C400"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 0,
+          "lane": 2,
+          "logical_row": 27,
+          "physical_row": 58,
+          "value": 1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C400",
+          "k": 0,
+          "lane": 3,
+          "logical_row": 2,
+          "physical_row": 59,
+          "value": -4.0
+        }
+      ],
+      "row_base": 56,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 1,
+      "lane_words_hex": [
+        "002F0000",
+        "0015BE00",
+        "001BB800",
+        "00024400"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 1,
+          "lane": 1,
+          "logical_row": 21,
+          "physical_row": 57,
+          "value": -1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 1,
+          "lane": 2,
+          "logical_row": 27,
+          "physical_row": 58,
+          "value": -0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 1,
+          "lane": 3,
+          "logical_row": 2,
+          "physical_row": 59,
+          "value": 4.0
+        }
+      ],
+      "row_base": 56,
+      "valid_mask_hex": "000E"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 2,
+      "lane_words_hex": [
+        "002F0000",
+        "0015BC00",
+        "001B4000",
+        "00020000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 2,
+          "lane": 1,
+          "logical_row": 21,
+          "physical_row": 57,
+          "value": -1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 2,
+          "lane": 2,
+          "logical_row": 27,
+          "physical_row": 58,
+          "value": 2.0
+        },
+        null
+      ],
+      "row_base": 56,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 4,
+      "lane_words_hex": [
+        "002F4200",
+        "0015C000",
+        "001B0000",
+        "00020000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 4,
+          "lane": 0,
+          "logical_row": 47,
+          "physical_row": 56,
+          "value": 3.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C000",
+          "k": 4,
+          "lane": 1,
+          "logical_row": 21,
+          "physical_row": 57,
+          "value": -2.0
+        },
+        null,
+        null
+      ],
+      "row_base": 56,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 5,
+      "lane_words_hex": [
+        "002F0000",
+        "00154000",
+        "001B0000",
+        "00020000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 5,
+          "lane": 1,
+          "logical_row": 21,
+          "physical_row": 57,
+          "value": 2.0
+        },
+        null,
+        null
+      ],
+      "row_base": 56,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 8,
+      "lane_words_hex": [
+        "002F3E00",
+        "00150000",
+        "001B0000",
+        "00020000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 8,
+          "lane": 0,
+          "logical_row": 47,
+          "physical_row": 56,
+          "value": 1.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 56,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 13,
+      "lane_words_hex": [
+        "002F0000",
+        "00150000",
+        "001BBC00",
+        "0002BE00"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 13,
+          "lane": 2,
+          "logical_row": 27,
+          "physical_row": 58,
+          "value": -1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 13,
+          "lane": 3,
+          "logical_row": 2,
+          "physical_row": 59,
+          "value": -1.5
+        }
+      ],
+      "row_base": 56,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 18,
+      "lane_words_hex": [
+        "002F3800",
+        "00150000",
+        "001B0000",
+        "00020000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 18,
+          "lane": 0,
+          "logical_row": 47,
+          "physical_row": 56,
+          "value": 0.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 56,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 19,
+      "lane_words_hex": [
+        "002F3E00",
+        "00150000",
+        "001B0000",
+        "00020000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 19,
+          "lane": 0,
+          "logical_row": 47,
+          "physical_row": 56,
+          "value": 1.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 56,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0004",
+      "k": 20,
+      "lane_words_hex": [
+        "002F0000",
+        "00150000",
+        "001B4400",
+        "00020000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "4400",
+          "k": 20,
+          "lane": 2,
+          "logical_row": 27,
+          "physical_row": 58,
+          "value": 4.0
+        },
+        null
+      ],
+      "row_base": 56,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0001",
+      "k": 23,
+      "lane_words_hex": [
+        "002FB800",
+        "00153E00",
+        "001B0000",
+        "00020000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "B800",
+          "k": 23,
+          "lane": 0,
+          "logical_row": 47,
+          "physical_row": 56,
+          "value": -0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 23,
+          "lane": 1,
+          "logical_row": 21,
+          "physical_row": 57,
+          "value": 1.5
+        },
+        null,
+        null
+      ],
+      "row_base": 56,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 24,
+      "lane_words_hex": [
+        "002F0000",
+        "00150000",
+        "001B0000",
+        "00023E00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 24,
+          "lane": 3,
+          "logical_row": 2,
+          "physical_row": 59,
+          "value": 1.5
+        }
+      ],
+      "row_base": 56,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0008",
+      "k": 27,
+      "lane_words_hex": [
+        "002F0000",
+        "00150000",
+        "001B0000",
+        "00023C00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "3C00",
+          "k": 27,
+          "lane": 3,
+          "logical_row": 2,
+          "physical_row": 59,
+          "value": 1.0
+        }
+      ],
+      "row_base": 56,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0002",
+      "k": 31,
+      "lane_words_hex": [
+        "002F0000",
+        "0015B800",
+        "001B0000",
+        "00020000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "B800",
+          "k": 31,
+          "lane": 1,
+          "logical_row": 21,
+          "physical_row": 57,
+          "value": -0.5
+        },
+        null,
+        null
+      ],
+      "row_base": 56,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 0,
+      "lane_words_hex": [
+        "00313E00",
+        "001A0000",
+        "002B0000",
+        "00073800"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 0,
+          "lane": 0,
+          "logical_row": 49,
+          "physical_row": 60,
+          "value": 1.5
+        },
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 0,
+          "lane": 3,
+          "logical_row": 7,
+          "physical_row": 63,
+          "value": 0.5
+        }
+      ],
+      "row_base": 60,
+      "valid_mask_hex": "0009"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 3,
+      "lane_words_hex": [
+        "00310000",
+        "001A0000",
+        "002B4200",
+        "00070000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "4200",
+          "k": 3,
+          "lane": 2,
+          "logical_row": 43,
+          "physical_row": 62,
+          "value": 3.0
+        },
+        null
+      ],
+      "row_base": 60,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 6,
+      "lane_words_hex": [
+        "00310000",
+        "001ABC00",
+        "002BC200",
+        "00070000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 6,
+          "lane": 1,
+          "logical_row": 26,
+          "physical_row": 61,
+          "value": -1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "C200",
+          "k": 6,
+          "lane": 2,
+          "logical_row": 43,
+          "physical_row": 62,
+          "value": -3.0
+        },
+        null
+      ],
+      "row_base": 60,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 10,
+      "lane_words_hex": [
+        "00310000",
+        "001A0000",
+        "002B0000",
+        "00073E00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 10,
+          "lane": 3,
+          "logical_row": 7,
+          "physical_row": 63,
+          "value": 1.5
+        }
+      ],
+      "row_base": 60,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 12,
+      "lane_words_hex": [
+        "00314400",
+        "001A4400",
+        "002B0000",
+        "00070000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 12,
+          "lane": 0,
+          "logical_row": 49,
+          "physical_row": 60,
+          "value": 4.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "4400",
+          "k": 12,
+          "lane": 1,
+          "logical_row": 26,
+          "physical_row": 61,
+          "value": 4.0
+        },
+        null,
+        null
+      ],
+      "row_base": 60,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 13,
+      "lane_words_hex": [
+        "00314000",
+        "001A3E00",
+        "002BBC00",
+        "00070000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "4000",
+          "k": 13,
+          "lane": 0,
+          "logical_row": 49,
+          "physical_row": 60,
+          "value": 2.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "3E00",
+          "k": 13,
+          "lane": 1,
+          "logical_row": 26,
+          "physical_row": 61,
+          "value": 1.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 13,
+          "lane": 2,
+          "logical_row": 43,
+          "physical_row": 62,
+          "value": -1.0
+        },
+        null
+      ],
+      "row_base": 60,
+      "valid_mask_hex": "0007"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 14,
+      "lane_words_hex": [
+        "00310000",
+        "001A0000",
+        "002B0000",
+        "0007BE00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 14,
+          "lane": 3,
+          "logical_row": 7,
+          "physical_row": 63,
+          "value": -1.5
+        }
+      ],
+      "row_base": 60,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 17,
+      "lane_words_hex": [
+        "00313800",
+        "001AB800",
+        "002B0000",
+        "00070000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 17,
+          "lane": 0,
+          "logical_row": 49,
+          "physical_row": 60,
+          "value": 0.5
+        },
+        {
+          "eor": false,
+          "fp16_hex": "B800",
+          "k": 17,
+          "lane": 1,
+          "logical_row": 26,
+          "physical_row": 61,
+          "value": -0.5
+        },
+        null,
+        null
+      ],
+      "row_base": 60,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 19,
+      "lane_words_hex": [
+        "00310000",
+        "001A0000",
+        "002BBC00",
+        "0007BE00"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "BC00",
+          "k": 19,
+          "lane": 2,
+          "logical_row": 43,
+          "physical_row": 62,
+          "value": -1.0
+        },
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 19,
+          "lane": 3,
+          "logical_row": 7,
+          "physical_row": 63,
+          "value": -1.5
+        }
+      ],
+      "row_base": 60,
+      "valid_mask_hex": "000C"
+    },
+    {
+      "eor_mask_hex": "0001",
+      "k": 24,
+      "lane_words_hex": [
+        "00313C00",
+        "001A0000",
+        "002B0000",
+        "00070000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "3C00",
+          "k": 24,
+          "lane": 0,
+          "logical_row": 49,
+          "physical_row": 60,
+          "value": 1.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 60,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0008",
+      "k": 25,
+      "lane_words_hex": [
+        "00310000",
+        "001A3C00",
+        "002B0000",
+        "00073E00"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3C00",
+          "k": 25,
+          "lane": 1,
+          "logical_row": 26,
+          "physical_row": 61,
+          "value": 1.0
+        },
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "3E00",
+          "k": 25,
+          "lane": 3,
+          "logical_row": 7,
+          "physical_row": 63,
+          "value": 1.5
+        }
+      ],
+      "row_base": 60,
+      "valid_mask_hex": "000A"
+    },
+    {
+      "eor_mask_hex": "0002",
+      "k": 29,
+      "lane_words_hex": [
+        "00310000",
+        "001ABC00",
+        "002B0000",
+        "00070000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "BC00",
+          "k": 29,
+          "lane": 1,
+          "logical_row": 26,
+          "physical_row": 61,
+          "value": -1.0
+        },
+        null,
+        null
+      ],
+      "row_base": 60,
+      "valid_mask_hex": "0002"
+    },
+    {
+      "eor_mask_hex": "0000",
+      "k": 30,
+      "lane_words_hex": [
+        "00310000",
+        "001A0000",
+        "002B3800",
+        "00070000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 30,
+          "lane": 2,
+          "logical_row": 43,
+          "physical_row": 62,
+          "value": 0.5
+        },
+        null
+      ],
+      "row_base": 60,
+      "valid_mask_hex": "0004"
+    },
+    {
+      "eor_mask_hex": "0004",
+      "k": 31,
+      "lane_words_hex": [
+        "00310000",
+        "001A0000",
+        "002B3E00",
+        "00070000"
+      ],
+      "lanes": [
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "3E00",
+          "k": 31,
+          "lane": 2,
+          "logical_row": 43,
+          "physical_row": 62,
+          "value": 1.5
+        },
+        null
+      ],
+      "row_base": 60,
+      "valid_mask_hex": "0004"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "vectors": [
+    {
+      "eor_mask_hex": "0004",
+      "k": 0,
+      "lane_words_hex": [
+        "00020000",
+        "00033800",
+        "0006C400",
+        "00000000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": false,
+          "fp16_hex": "3800",
+          "k": 0,
+          "lane": 1,
+          "logical_row": 3,
+          "physical_row": 1,
+          "value": 0.5
+        },
+        {
+          "eor": true,
+          "fp16_hex": "C400",
+          "k": 0,
+          "lane": 2,
+          "logical_row": 6,
+          "physical_row": 2,
+          "value": -4.0
+        },
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0006"
+    },
+    {
+      "eor_mask_hex": "0008",
+      "k": 1,
+      "lane_words_hex": [
+        "00020000",
+        "00030000",
+        "00060000",
+        "0000BC00"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "BC00",
+          "k": 1,
+          "lane": 3,
+          "logical_row": 0,
+          "physical_row": 3,
+          "value": -1.0
+        }
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0002",
+      "k": 6,
+      "lane_words_hex": [
+        "0002BE00",
+        "00033800",
+        "00060000",
+        "00000000"
+      ],
+      "lanes": [
+        {
+          "eor": false,
+          "fp16_hex": "BE00",
+          "k": 6,
+          "lane": 0,
+          "logical_row": 2,
+          "physical_row": 0,
+          "value": -1.5
+        },
+        {
+          "eor": true,
+          "fp16_hex": "3800",
+          "k": 6,
+          "lane": 1,
+          "logical_row": 3,
+          "physical_row": 1,
+          "value": 0.5
+        },
+        null,
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0003"
+    },
+    {
+      "eor_mask_hex": "0001",
+      "k": 7,
+      "lane_words_hex": [
+        "0002C200",
+        "00030000",
+        "00060000",
+        "00000000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "C200",
+          "k": 7,
+          "lane": 0,
+          "logical_row": 2,
+          "physical_row": 0,
+          "value": -3.0
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 0,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0001",
+      "k": 1,
+      "lane_words_hex": [
+        "0005B800",
+        "00010000",
+        "00040000",
+        "00070000"
+      ],
+      "lanes": [
+        {
+          "eor": true,
+          "fp16_hex": "B800",
+          "k": 1,
+          "lane": 0,
+          "logical_row": 5,
+          "physical_row": 4,
+          "value": -0.5
+        },
+        null,
+        null,
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0001"
+    },
+    {
+      "eor_mask_hex": "0008",
+      "k": 6,
+      "lane_words_hex": [
+        "00050000",
+        "00010000",
+        "00040000",
+        "00074200"
+      ],
+      "lanes": [
+        null,
+        null,
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "4200",
+          "k": 6,
+          "lane": 3,
+          "logical_row": 7,
+          "physical_row": 7,
+          "value": 3.0
+        }
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0008"
+    },
+    {
+      "eor_mask_hex": "0006",
+      "k": 7,
+      "lane_words_hex": [
+        "00050000",
+        "00013C00",
+        "0004BC00",
+        "00070000"
+      ],
+      "lanes": [
+        null,
+        {
+          "eor": true,
+          "fp16_hex": "3C00",
+          "k": 7,
+          "lane": 1,
+          "logical_row": 1,
+          "physical_row": 5,
+          "value": 1.0
+        },
+        {
+          "eor": true,
+          "fp16_hex": "BC00",
+          "k": 7,
+          "lane": 2,
+          "logical_row": 4,
+          "physical_row": 6,
+          "value": -1.0
+        },
+        null
+      ],
+      "row_base": 4,
+      "valid_mask_hex": "0006"
+    }
+  ]
+}

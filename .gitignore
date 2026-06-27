@@ -1,11 +1,7 @@
 verdiLog/
-check_result/
-test_result/
 novas.*
 *.fsdb
-visual_result/
-tools/
-testcases/
+tools/__pycache__/
 requirements.txt
 build_dir/
 *.log   

@@ -1,0 +1,145 @@
+{
+  "a_original_stats": {
+    "col_nnz": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "col_nnz_avg": 0.5,
+    "col_nnz_max": 1,
+    "col_nnz_min": 0,
+    "cols": 4,
+    "density": 0.125,
+    "nnz": 2,
+    "row_nnz": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "row_nnz_avg": 0.5,
+    "row_nnz_max": 1,
+    "row_nnz_min": 0,
+    "rows": 4
+  },
+  "a_reordered_stats": {
+    "col_nnz": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "col_nnz_avg": 0.5,
+    "col_nnz_max": 1,
+    "col_nnz_min": 0,
+    "cols": 4,
+    "density": 0.125,
+    "nnz": 2,
+    "row_nnz": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "row_nnz_avg": 0.5,
+    "row_nnz_max": 1,
+    "row_nnz_min": 0,
+    "rows": 4
+  },
+  "b_stats": {
+    "col_nnz": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "col_nnz_avg": 1.0,
+    "col_nnz_max": 1,
+    "col_nnz_min": 1,
+    "cols": 4,
+    "density": 0.25,
+    "nnz": 4,
+    "row_nnz": [
+      2,
+      1,
+      1,
+      0
+    ],
+    "row_nnz_avg": 1.0,
+    "row_nnz_max": 2,
+    "row_nnz_min": 0,
+    "rows": 4
+  },
+  "c_original_order_stats": {
+    "col_nnz": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "col_nnz_avg": 0.5,
+    "col_nnz_max": 1,
+    "col_nnz_min": 0,
+    "cols": 4,
+    "density": 0.125,
+    "nnz": 2,
+    "row_nnz": [
+      0,
+      0,
+      2,
+      0
+    ],
+    "row_nnz_avg": 0.5,
+    "row_nnz_max": 2,
+    "row_nnz_min": 0,
+    "rows": 4
+  },
+  "c_reordered_order_stats": {
+    "col_nnz": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "col_nnz_avg": 0.5,
+    "col_nnz_max": 1,
+    "col_nnz_min": 0,
+    "cols": 4,
+    "density": 0.125,
+    "nnz": 2,
+    "row_nnz": [
+      2,
+      0,
+      0,
+      0
+    ],
+    "row_nnz_avg": 0.5,
+    "row_nnz_max": 2,
+    "row_nnz_min": 0,
+    "rows": 4
+  },
+  "csv_metrics_after_reorder": {
+    "b_row_read_reduction": 0.0,
+    "block_utilization_avg": 0.25,
+    "csv_vector_count": 2,
+    "lane_utilization": 0.25,
+    "nnz": 2,
+    "pe_lanes": 4,
+    "row_blocks": 1,
+    "valid_lane_count": 2
+  },
+  "csv_metrics_before_reorder": {
+    "b_row_read_reduction": 0.0,
+    "block_utilization_avg": 0.25,
+    "csv_vector_count": 2,
+    "lane_utilization": 0.25,
+    "nnz": 2,
+    "pe_lanes": 4,
+    "row_blocks": 1,
+    "valid_lane_count": 2
+  },
+  "csv_vector_count": 2,
+  "csv_vector_width": 192,
+  "csv_words_per_vector": 6
+}
